@@ -458,6 +458,7 @@ ul {
     background-color: #e1e6e9;
     overflow: hidden;
     position: relative;
+    height: 900px;
 }
 
 .btn-down {
@@ -540,9 +541,6 @@ footer .contact-icon+span {
     font-size: 14px;
     line-height: 1.43;
     color: #607d8b;
-}
-.ico-develop{
-    padding-top: 160px;
 }
 @media (max-width: 768px) {
     footer .medi-shares {
@@ -913,4 +911,89 @@ footer .contact-icon+span {
            -moz-transform: scale(1) translate(0 ,0);
                 transform: scale(1) translate(0 ,0);
     }
+}
+.iScrollHorizontalScrollbar {
+    position: absolute;
+    z-index: 9999;
+    height: 24px;
+    width: 300px;
+    left: 50%;
+    -webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);
+    bottom: 40px;
+    overflow: visible!important;
+}
+.iScrollHorizontalScrollbar:before{
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid #c8d2d7;
+}
+.iScrollHorizontalScrollbar.iScrollBothScrollbars {
+    right: 18px;
+}
+
+.iScrollVerticalScrollbar {
+    position: absolute;
+    z-index: 9999;
+    width: 16px;
+    bottom: 2px;
+    top: 2px;
+    right: 2px;
+    overflow: hidden;
+}
+
+.iScrollVerticalScrollbar.iScrollBothScrollbars {
+    bottom: 18px;
+}
+
+.iScrollIndicator {
+    position: absolute;
+}
+
+.iScrollHorizontalScrollbar .iScrollIndicator {
+    width: 64px!important;
+    height: 24px!important;
+    background:url(../images/icon/slide_btn@2x.png) no-repeat top left/cover;
+}
+
+.iScrollVerticalScrollbar .iScrollIndicator {
+    width: 100%;
+    background: -moz-linear-gradient(top, #cc3f6e 0%, #93004e 100%);
+    background: -webkit-linear-gradient(top,  #cc3f6e 0%,#93004e 100%);
+    background: -o-linear-gradient(top, #cc3f6e 0%,#93004e 100%);
+    background: -ms-linear-gradient(top, #cc3f6e 0%,#93004e 100%);
+    background: linear-gradient(to bottom,  #cc3f6e 0%,#93004e 100%);
+}
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
 }

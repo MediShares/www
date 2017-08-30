@@ -14,7 +14,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body onload="loaded()">
   <!--头部-->
   <div class="ico-top center-align">
     <nav class="ico-nav navbar navbar-default">
@@ -23,7 +23,7 @@
             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">中文 <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="en">English</a>
+                <a href="/en/">English</a>
               </li>
             </ul>
           </div>
@@ -255,109 +255,110 @@
     </div>
   </div>
   <!-- 发展路线图 -->
-  <div class="ico-develop">
+  <div class="ico-develop pd-160">
     <div class="container">
       <div class="ico-des-title  center-align">发展路线图</div>
     </div>
-    <div class="scroll-box">
-      <ul class="row  mt-120">
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.03</div>
-            <div class="dev-des">众托帮成立，天使轮融资 1 亿元</div>
-          </div>
-        </li>
-        <li class="col-xs-12 col-sm-2 ico-develop-list">
-           <div class="develop-box">
-              <div class="dev-date">2016.07</div>
-              <div class="dev-des">众托帮正式上线，同步上线区块链公示系统</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2016.08</div>
-              <div class="dev-des">众托帮上线 55 天，会员数破 100 万人</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2016.09</div>
-              <div class="dev-des">众托帮区块链应用亮相第二届区块链全球峰会 DEMO Day，同时亮相的还有量子链、iamToken 等明星区块链项目</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2016.12</div>
-              <div class="dev-des">众托帮获得“基于区块链的互助保险和互助保障运行方法及系统”专利</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2016.12</div>
-              <div class="dev-des">众托帮联手多家公益机构发布公益区块链“心链”，首创了爱心数字资产概念</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2016.12</div>
-              <div class="dev-des">众托帮在首届中国区块链技术创新应用大赛中斩获创意类创新奖及最佳人气奖，成为全场唯一双料王</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017 Q3</div>
-              <div class="dev-des">
-                <ul>
-                  <li><span class="ico-des-dot">•</span><div>系统规划方案</div></li>
-                  <li><span class="ico-des-dot">•</span><div>ICO</div></li>
-                </ul>
+    <div id="wrapper">
+      <div id="scroller">
+        <div class="scroll-box" id="scroll-box">
+          <ul class="row  mt-120">
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.03</div>
+                <div class="dev-des">众托帮成立，天使轮融资 1 亿元</div>
               </div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017 Q4</div>
-              <div class="dev-des">
-                <ul>
-                  <li><span class="ico-des-dot">•</span><div>MVP</div></li>
-                  <li><span class="ico-des-dot">•</span><div>Oracle 开发</div></li>
-                </ul></div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2018 Q1</div>
-              <div class="dev-des">
-                <ul>
-                  <li><span class="ico-des-dot">•</span><div>iOS & Android APP 开发</div></li>
-                  <li><span class="ico-des-dot">•</span><div>侧链开发</div></li>
-                </ul>
+            </li>
+            <li class="col-xs-12 col-sm-2 ico-develop-list">
+               <div class="develop-box">
+                  <div class="dev-date">2016.07</div>
+                  <div class="dev-des">众托帮正式上线，同步上线区块链公示系统</div>
               </div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2018 Q2</div>
-              <div class="dev-des">
-                <ul>
-                  <li><span class="ico-des-dot">•</span><div>提供 API 和 SDK</div></li>
-                  <li><span class="ico-des-dot">•</span><div>Security Auditing 安全审计</div></li>
-                  <li><span class="ico-des-dot">•</span><div>试运行</div></li>
-                </ul>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2016.08</div>
+                  <div class="dev-des">众托帮上线 55 天，会员数破 100 万人</div>
               </div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2018 Q3</div>
-              <div class="dev-des">Pre 生产运行</div>
-          </div>
-        </li>
-      </ul>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2016.09</div>
+                  <div class="dev-des">众托帮区块链应用亮相第二届区块链全球峰会 DEMO Day，同时亮相的还有量子链、iamToken 等明星区块链项目</div>
+              </div>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2016.12</div>
+                  <div class="dev-des">众托帮获得“基于区块链的互助保险和互助保障运行方法及系统”专利</div>
+              </div>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2016.12</div>
+                  <div class="dev-des">众托帮联手多家公益机构发布公益区块链“心链”，首创了爱心数字资产概念</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2016.12</div>
+                  <div class="dev-des">众托帮在首届中国区块链技术创新应用大赛中斩获创意类创新奖及最佳人气奖，成为全场唯一双料王</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017 Q3</div>
+                  <div class="dev-des">
+                    <ul>
+                      <li><span class="ico-des-dot">•</span><div>系统规划方案</div></li>
+                      <li><span class="ico-des-dot">•</span><div>ICO</div></li>
+                    </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017 Q4</div>
+                  <div class="dev-des">
+                    <ul>
+                      <li><span class="ico-des-dot">•</span><div>MVP</div></li>
+                      <li><span class="ico-des-dot">•</span><div>Oracle 开发</div></li>
+                    </ul></div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2018 Q1</div>
+                  <div class="dev-des">
+                    <ul>
+                      <li><span class="ico-des-dot">•</span><div>iOS & Android APP 开发</div></li>
+                      <li><span class="ico-des-dot">•</span><div>侧链开发</div></li>
+                    </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2018 Q2</div>
+                  <div class="dev-des">
+                    <ul>
+                      <li><span class="ico-des-dot">•</span><div>提供 API 和 SDK</div></li>
+                      <li><span class="ico-des-dot">•</span><div>Security Auditing 安全审计</div></li>
+                      <li><span class="ico-des-dot">•</span><div>试运行</div></li>
+                    </ul>
+                  </div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2018 Q3</div>
+                  <div class="dev-des">Pre 生产运行</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- <div class="scroll-bar hidden-xs">
-      <img src="images/icon/slide_btn@2x.png" width="64px">
-    </div> -->
   </div>
   <!-- 底部 -->
   <footer>
@@ -404,7 +405,8 @@
   </footer>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!-- <script src="js/ico-common.js"></script> -->
+  <script src="js/iscroll.js"></script>
+  <script src="js/ico-common.js"></script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body onload="loaded()">
   <!--头部-->
   <div class="ico-top center-align">
     <nav class="ico-nav navbar navbar-default">
@@ -23,7 +23,7 @@
             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="../index.html">中文</a>
+                <a href="../">中文</a>
               </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@
       <div class="ico-des-title center-align">What is MediShares</div>
       <ul class="row ico-des-list">
         <li class="col-sm-4 col-xs-12"><span class="ico-des-dot">•</span><div>Medishares is a Ethereum based, decentralized, open-source mutual insurance marketplace.</div></li>
-        <li class="col-sm-4 col-xs-12"><span class="ico-des-dot">•</span><div>Anyone can join a mutual insurance scheme through sending variable amount of MDS to a smart contract./div></li>
+        <li class="col-sm-4 col-xs-12"><span class="ico-des-dot">•</span><div>Anyone can join a mutual insurance scheme through sending variable amount of MDS to a smart contract.</div></li>
         <li class="col-sm-4 col-xs-12"><span class="ico-des-dot">•</span><div>Anyone can become a mutual insurance insurer based on the smart contract templates provided by MediShares, and can profit from it.</div></li>
       </ul>
     </div>
@@ -249,109 +249,110 @@
     </div>
   </div>
   <!-- 发展路线图 -->
-  <div class="ico-develop">
+  <div class="ico-develop  pd-160">
     <div class="container">
       <div class="ico-des-title  center-align">Roadmap</div>
     </div>
-    <div class="scroll-box scroll-box-en">
-      <ul class="row  mt-120">
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.03</div>
-            <div class="dev-des">Zhongtopia, a mutual aid online platform was founded and obtained 100 million  RMB venture capital from CSC Group – a China leading VC</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.07</div>
-            <div class="dev-des">Zhongtopia APP on production, and released blockchain system for public information disclosure</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.08.55</div>
-            <div class="dev-des">days after the APP go-alive, the mutual aid joiners reached 1 million</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.09</div>
-            <div class="dev-des">Zhongtopia announced its blockchain solution in the DEMODAY of 2nd Global Blockchain Summit</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.11</div>
-            <div class="dev-des">Zhongtopia participated the Global Internet Summit and become the 1st blockchain product on the summit</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.12</div>
-            <div class="dev-des">Zhongtopia announed ‘XinChain’, a public welfare blockchain based on Ethereum</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2016.12</div>
-            <div class="dev-des">Zhongtopia voted two prestigious awards in the 1st China Blockchain Creativity Contest.</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2017.06</div>
-            <div class="dev-des">Zhongtopia mutual aid joiners reached 8 millions, and is the biggest mutual aid online platform in China</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-            <div class="dev-date">2017.08.31</div>
-            <div class="dev-des">Finish MediShares Whitepaper</div>
-          </div>
-        </li>
-        <li class="col-xs-12 col-sm-2 ico-develop-list">
-           <div class="develop-box">
-              <div class="dev-date">2017.09.01</div>
-              <div class="dev-des">Online MediShares.org</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017.09.01</div>
-              <div class="dev-des">ICO road show start</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017.09.08</div>
-              <div class="dev-des">Online Community Program start</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017.09.14</div>
-              <div class="dev-des">Finish Singapore non-profit organizations registration</div>
-          </div>
-        </li>
-        <li class="col-xs-12 ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017.09.15</div>
-              <div class="dev-des">PE stage start</div>
-          </div>
-        </li>
-        <li class="col-xs-12  ico-develop-list">
-          <div class="develop-box">
-              <div class="dev-date">2017.09.28</div>
-              <div class="dev-des">
-                ICO in both China and USA
+    <div id="wrapper">
+      <div id="scroller">
+        <div class="scroll-box scroll-box-en">
+          <ul class="row  mt-120">
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.03</div>
+                <div class="dev-des">Zhongtopia, a mutual aid online platform was founded and obtained 100 million  RMB venture capital from CSC Group – a China leading VC</div>
               </div>
-          </div>
-        </li>
-      </ul>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.07</div>
+                <div class="dev-des">Zhongtopia APP on production, and released blockchain system for public information disclosure</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.08.55</div>
+                <div class="dev-des">days after the APP go-alive, the mutual aid joiners reached 1 million</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.09</div>
+                <div class="dev-des">Zhongtopia announced its blockchain solution in the DEMODAY of 2nd Global Blockchain Summit</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.11</div>
+                <div class="dev-des">Zhongtopia participated the Global Internet Summit and become the 1st blockchain product on the summit</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.12</div>
+                <div class="dev-des">Zhongtopia announed ‘XinChain’, a public welfare blockchain based on Ethereum</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2016.12</div>
+                <div class="dev-des">Zhongtopia voted two prestigious awards in the 1st China Blockchain Creativity Contest.</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2017.06</div>
+                <div class="dev-des">Zhongtopia mutual aid joiners reached 8 millions, and is the biggest mutual aid online platform in China</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                <div class="dev-date">2017.08.31</div>
+                <div class="dev-des">Finish MediShares Whitepaper</div>
+              </div>
+            </li>
+            <li class="col-xs-12 col-sm-2 ico-develop-list">
+               <div class="develop-box">
+                  <div class="dev-date">2017.09.01</div>
+                  <div class="dev-des">Online MediShares.org</div>
+              </div>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017.09.01</div>
+                  <div class="dev-des">ICO road show start</div>
+              </div>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017.09.08</div>
+                  <div class="dev-des">Online Community Program start</div>
+              </div>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017.09.14</div>
+                  <div class="dev-des">Finish Singapore non-profit organizations registration</div>
+              </div>
+            </li>
+            <li class="col-xs-12 ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017.09.15</div>
+                  <div class="dev-des">PE stage start</div>
+              </div>
+            </li>
+            <li class="col-xs-12  ico-develop-list">
+              <div class="develop-box">
+                  <div class="dev-date">2017.09.28</div>
+                  <div class="dev-des">
+                    ICO in both China and USA
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- <div class="scroll-bar hidden-xs">
-      <img src="../images/icon/slide_btn@2x.png" width="64px">
-    </div> -->
   </div>
   <!-- 底部 -->
   <footer>
@@ -398,7 +399,8 @@
   </footer>
   <script src="../js/jquery-3.2.1.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
-  <!-- <script src="js/ico-common.js"></script> -->
+  <script src="../js/iscroll.js"></script>
+  <script src="../js/ico-common.js"></script>
 </body>
 
 </html>
