@@ -458,6 +458,7 @@ ul {
     background-color: #e1e6e9;
     overflow: hidden;
     position: relative;
+    height: 900px;
 }
 
 .btn-down {
@@ -541,10 +542,74 @@ footer .contact-icon+span {
     line-height: 1.43;
     color: #607d8b;
 }
-.ico-develop{
-    padding-top: 160px;
+.iScrollHorizontalScrollbar {
+    position: absolute;
+    z-index: 9999;
+    height: 24px;
+    width: 300px;
+    left: 50%;
+    -webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);
+    bottom: 40px;
+    overflow: visible!important;
 }
-@media (max-width: 768px) {
+.iScrollHorizontalScrollbar:before{
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid #c8d2d7;
+}
+.iScrollHorizontalScrollbar.iScrollBothScrollbars {
+    right: 18px;
+}
+
+.iScrollVerticalScrollbar{
+    display: none;
+}
+.iScrollIndicator {
+    position: absolute;
+}
+
+.iScrollHorizontalScrollbar .iScrollIndicator {
+    width: 64px!important;
+    height: 24px!important;
+    background:url(../images/icon/slide_btn@2x.png) no-repeat top left/cover;
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+@media (max-width: 767px) {
     footer .medi-shares {
         margin-bottom: 60px;
     }
@@ -660,8 +725,26 @@ footer .contact-icon+span {
     }
 
     .ico-develop{
-        padding: 60px 0;
+        height: auto;
     }
+    #wrapper{
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+    #wrapper {
+        position: relative;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        overflow: hidden;
+    }
+
+    #scroller {
+        position: relative;
+    }
+
     .ico-develop-list {
         padding: 0 0 40px 32px;
         position: relative;
@@ -692,6 +775,9 @@ footer .contact-icon+span {
     .ico-develop-list:last-of-type:before {
         left: -10px;
     }
+    .iScrollHorizontalScrollbar{
+        display: none;
+    }
 }
 
 @media (max-width: 360px) {
@@ -719,7 +805,7 @@ footer .contact-icon+span {
         padding-left: 132px;
     }
     .scroll-box-en>ul {
-        width: 4100px;
+        width: 2600px;
     }
     .scroll-box {
         padding: 140px 0 230px;
