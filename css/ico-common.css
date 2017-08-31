@@ -166,9 +166,10 @@ ul {
 
 .ico-top .slogan {
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.5;
     margin-top: 16px;
-    font-family: Gotham-Book;
+    font-family: Gotham-Light;
 }
 
 .ico-address {
@@ -362,7 +363,6 @@ ul {
 }
 
 .ico-apl-info {
-    padding-right: 40px;
     margin-top: 9px;
     font-size: 12px;
     line-height: 1.5;
@@ -372,6 +372,7 @@ ul {
 
 .ico-market-list {
     position: relative;
+    padding-right: 60px;
 }
 
 .ico-market-list:before {
@@ -437,12 +438,13 @@ ul {
 }
 
 .ico-counselor>.container {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #e1e6e9;
     padding: 160px 15px;
 }
 
 .ico-partner-list {
-    padding: 0 50px;
+    height: 64px;
+    margin-top: 40px;
 }
 
 .ico-partner-list>a {
@@ -451,9 +453,9 @@ ul {
 }
 
 .ico-partner-list img {
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
-
 .ico-develop {
     background-color: #e1e6e9;
     overflow: hidden;
@@ -518,7 +520,7 @@ footer .contact-icon>img {
 }
 
 footer .contact-icon+span {
-    font-family: Gotham;
+    font-family: Gotham-Medium;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.25;
@@ -527,13 +529,13 @@ footer .contact-icon+span {
 }
 
 .code-tip {
-    font-family: Gotham;
+    font-family: Gotham-Medium;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.33;
-    text-align: center;
     color: #607d8b;
     margin-top: 24px;
+    white-space: nowrap;
 }
 
 .copyright {
@@ -608,8 +610,10 @@ footer .contact-icon+span {
     -o-text-size-adjust: none;
     text-size-adjust: none;
 }
-
 @media (max-width: 767px) {
+    .mt-40{
+        margin-top: 0!important;
+    }
     footer .medi-shares {
         margin-bottom: 60px;
     }
@@ -623,13 +627,14 @@ footer .contact-icon+span {
         padding: 0 40px;
     }
     .ico-des {
-        padding: 60px 17px 80px;
+        padding: 60px 0 80px;
     }
     .ico-des ul {
         margin: 0;
     }
     .ico-des li {
         margin-top: 40px;
+        padding: 0;
     }
 
     .pd-160 {
@@ -642,11 +647,14 @@ footer .contact-icon+span {
     .mt-100 {
         margin-top: 40px!important;
     }
-    .ico-superiority ul {
+    .ico-des>.container,.ico-superiority>.container,.ico-market>.container,.ico-team>.container{
+        padding: 0 32px;
+    }
+    .ico-des>.container>ul,.ico-superiority>.container>ul,.ico-market>.container>ul{
         margin: 0;
     }
     .ico-superiority li {
-        padding: 40px 32px 0;
+        padding: 40px 0 0;
     }
     .ico-apl-list>li {
         margin-top: 8px;
@@ -656,29 +664,26 @@ footer .contact-icon+span {
     }
     .ico-market-list {
         margin-top: 40px;
-        padding: 0 32px;
+        padding: 0 ;
     }
     .ico-team-img {
         width: 96px;
         height: 96px;
     }
     .ico-team .ico-team-list {
-        min-height: 270px;
+        min-height: 310px;
         margin-top: 40px;
     }
     .ico-counselor>.container {
-        padding: 60px 17px;
+        padding: 60px 0;
+        margin: 0 32px;
     }
     .ico-team-name {
         margin-top: 24px;
     }
     .ico-counselor .ico-team-list {
-        min-height: 200px;
+        min-height: 215px;
         margin-top: 40px;
-    }
-    .ico-partner-list {
-        margin-top: 40px;
-        padding: 0 80px;
     }
     footer {
         padding: 80px 17px 40px;
@@ -791,7 +796,7 @@ footer .contact-icon+span {
         height: auto;
     }
     footer .contact-icon {
-        margin-right: 8px;
+        margin-right: 3px;
     }
     footer .contact-icon+span {
         font-size: 14px;
@@ -799,6 +804,13 @@ footer .contact-icon+span {
 }
 
 @media (min-width: 768px) {
+    .ico-partner-list {
+    width: auto;
+    padding: 0;
+    margin: 40px 24px 0;
+    display: inline-block;
+    float: none;
+}
     .scroll-box>ul {
         width: 3300px;
         border-top: 4px solid #c8d2d7;
@@ -873,25 +885,14 @@ footer .contact-icon+span {
         top: -13px;
     }
     .ico-apl-list-en>li>.ico-apl-detail {
-        height: 440px;
+        height: 360px;
     }
-    .ico-partner-list {
-        width: auto;
-        padding: 0;
-        margin: 40px 24px 0;
-        height: 64px;
-        display: inline-block;
-        float: none;
-    }
-    .ico-partner-list img {
-        width: auto;
-        height: 100%;
-    }
+
 }
 
 @media (min-width: 992px) {
     .ico-apl-list-en>li>.ico-apl-detail {
-        height: 280px;
+        height: 260px;
     }
 }
 
