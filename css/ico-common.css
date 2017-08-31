@@ -13,18 +13,9 @@
     src: url("fonts/Gotham-Medium.otf");
 }
 
-a {
-    color: #fff;
-}
-
-a:hover {
+a,a:hover,a:focus{
     color: #fff;
     text-decoration: none;
-}
-
-a:focus {
-    text-decoration: none;
-    color: #fff;
 }
 
 input:focus {
@@ -42,6 +33,10 @@ ul {
 
 .pd-160 {
     padding: 160px 0!important;
+}
+
+.mt-170 {
+    margin-top: 170px!important;
 }
 
 .mt-120 {
@@ -62,24 +57,9 @@ ul {
     background-color: #f2f5f6!important;
 }
 
-.modal-header {
-    border: none;
-}
-
-.modal-body {
-    color: #2c363f;
-    padding-bottom: 50px;
-}
-
 .btn:hover,
 .btn:focus {
     color: #fff;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1080px;
-    }
 }
 
 .center-align {
@@ -136,22 +116,17 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     height: auto;
-}
-
-.navbar-default .navbar-brand {
     color: #fff;
 }
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-    font-size: 14px;
+.dropdown {
+    padding: 15px;
 }
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-    border: none;
+.dropdown-menu {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
 }
-
 .header-logo {
     width: 182px;
 }
@@ -197,49 +172,6 @@ ul {
     line-height: 1.67;
     color: #607d8b;
     margin-top: 8px;
-}
-
-.ico-emial {
-    padding: 120px 0;
-}
-
-.ico-emial-name {
-    font-family: Gotham-Light;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 2.0;
-    color: #2c363f;
-}
-
-.ico-emial-name-en {
-    font-size: 20px;
-}
-
-.ico-emial input {
-    height: 48px;
-    width: 100%;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-color: #e1e6e9;
-    border: none;
-    padding-left: 24px;
-}
-
-.ico-emial input::-webkit-input-placeholder {
-    color: #a9b9c1;
-}
-
-.ico-emial .btn-down {
-    margin-top: 0!important;
-    width: 100%;
-    padding: 0;
-    height: 48px;
-    line-height: 48px;
-    font-size: 16px;
-}
-
-.ico-emial .btn-down-en {
-    font-size: 12px;
 }
 
 .ico-des {
@@ -463,15 +395,20 @@ ul {
     height: 900px;
 }
 
-.btn-down {
-    padding: 10px 50px;
-    margin-top: 64px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-color: #607d8b;
+.develop-box .dev-date {
+    font-family: Gotham-Medium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #a9b9c1;
+}
+
+.develop-box .dev-des {
+    font-family: Gotham-Book;
     font-size: 14px;
     line-height: 1.43;
-    color: #ffffff;
+    color: #607d8b;
+    margin-top: 8px;
 }
 
 footer {
@@ -551,7 +488,7 @@ footer .contact-icon+span {
     width: 300px;
     left: 50%;
     -webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);
-    bottom: 40px;
+    bottom: 0;
     overflow: visible!important;
 }
 .iScrollHorizontalScrollbar:before{
@@ -563,18 +500,9 @@ footer .contact-icon+span {
     width: 100%;
     border-top: 2px solid #c8d2d7;
 }
-.iScrollHorizontalScrollbar.iScrollBothScrollbars {
-    right: 18px;
-}
-
-.iScrollVerticalScrollbar{
-    display: none;
-}
-.iScrollIndicator {
-    position: absolute;
-}
 
 .iScrollHorizontalScrollbar .iScrollIndicator {
+    position: absolute;
     width: 64px!important;
     height: 24px!important;
     background:url(../images/icon/slide_btn@2x.png) no-repeat top left/cover;
@@ -583,8 +511,8 @@ footer .contact-icon+span {
 #wrapper {
     position: absolute;
     z-index: 1;
-    top: 220px;
-    bottom: 48px;
+    top: 328px;
+    bottom: 80px;
     left: 0;
     right: 0;
     overflow: hidden;
@@ -611,11 +539,15 @@ footer .contact-icon+span {
     text-size-adjust: none;
 }
 @media (max-width: 767px) {
-    .mt-40{
-        margin-top: 0!important;
+    .pd-160 {
+        padding: 60px 0!important;
     }
-    footer .medi-shares {
-        margin-bottom: 60px;
+
+    .mt-120,.mt-170,.mt-40{
+        margin-top: 0px!important;
+    }
+    .mt-100 {
+        margin-top: 40px!important;
     }
     .invalid-name {
         font-size: 24px;
@@ -629,23 +561,9 @@ footer .contact-icon+span {
     .ico-des {
         padding: 60px 0 80px;
     }
-    .ico-des ul {
-        margin: 0;
-    }
     .ico-des li {
         margin-top: 40px;
         padding: 0;
-    }
-
-    .pd-160 {
-        padding: 60px 0!important;
-    }
-
-    .mt-120 {
-        margin-top: 0px!important;
-    }
-    .mt-100 {
-        margin-top: 40px!important;
     }
     .ico-des>.container,.ico-superiority>.container,.ico-market>.container,.ico-team>.container{
         padding: 0 32px;
@@ -658,6 +576,9 @@ footer .contact-icon+span {
     }
     .ico-apl-list>li {
         margin-top: 8px;
+    }
+    .ico-apl-list-en>li>.ico-apl-detail {
+        height: auto;
     }
     .ico-market-list:before {
         display: none;
@@ -688,6 +609,9 @@ footer .contact-icon+span {
     footer {
         padding: 80px 17px 40px;
     }
+    footer .medi-shares {
+        margin-bottom: 60px;
+    }
     footer .contact-list>li {
         padding: 0;
     }
@@ -706,22 +630,6 @@ footer .contact-icon+span {
     footer .row {
         padding-bottom: 80px;
     }
-    .ico-emial {
-        padding: 70px 17px;
-        text-align: center;
-    }
-    .ico-emial-name {
-        font-size: 30px;
-        padding: 0;
-    }
-    .ico-emial input {
-        margin: 40px 0 8px;
-        padding: 0;
-        text-align: center;
-    }
-    .ico-emial .btn-down {
-        width: 70%;
-    }
     .ico-address {
         width: 100%;
     }
@@ -732,18 +640,12 @@ footer .contact-icon+span {
     .ico-develop{
         height: auto;
     }
-    #wrapper{
-        position: relative;
-        left: auto;
-        top: auto;
-    }
     #wrapper {
         position: relative;
         left: auto;
         top: auto;
         bottom: auto;
         right: auto;
-        overflow: hidden;
     }
 
     #scroller {
@@ -789,12 +691,6 @@ footer .contact-icon+span {
     .ico-address-en {
         font-size: 11px;
     }
-    .ico-emial .btn-down-en {
-        font-size: 10px;
-    }
-    .ico-apl-list-en>li>.ico-apl-detail {
-        height: auto;
-    }
     footer .contact-icon {
         margin-right: 3px;
     }
@@ -810,7 +706,7 @@ footer .contact-icon+span {
     margin: 40px 24px 0;
     display: inline-block;
     float: none;
-}
+    }
     .scroll-box>ul {
         width: 3300px;
         border-top: 4px solid #c8d2d7;
@@ -818,10 +714,6 @@ footer .contact-icon+span {
     }
     .scroll-box-en>ul {
         width: 2600px;
-    }
-    .scroll-box {
-        padding: 140px 0 230px;
-        overflow-x: auto;
     }
     .ico-develop-list {
         width: 263px;
@@ -897,36 +789,15 @@ footer .contact-icon+span {
 }
 
 @media (min-width: 1200px) {
+    .container {
+        width: 1080px;
+    }
     .ico-apl-list-en>li>.ico-apl-detail {
         height: 240px;
     }
 }
 
-.develop-box .dev-date {
-    font-family: Gotham-Medium;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #a9b9c1;
-}
 
-.develop-box .dev-des {
-    font-family: Gotham-Book;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #607d8b;
-    margin-top: 8px;
-}
-
-.dropdown {
-    padding: 15px;
-}
-
-.dropdown-menu {
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-}
 
 @-webkit-keyframes scale {
     0% {
