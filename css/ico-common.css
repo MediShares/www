@@ -565,20 +565,9 @@ footer .contact-icon+span {
     right: 18px;
 }
 
-.iScrollVerticalScrollbar {
-    position: absolute;
-    z-index: 9999;
-    width: 16px;
-    bottom: 2px;
-    top: 2px;
-    right: 2px;
-    overflow: hidden;
+.iScrollVerticalScrollbar{
+    display: none;
 }
-
-.iScrollVerticalScrollbar.iScrollBothScrollbars {
-    bottom: 18px;
-}
-
 .iScrollIndicator {
     position: absolute;
 }
@@ -589,14 +578,6 @@ footer .contact-icon+span {
     background:url(../images/icon/slide_btn@2x.png) no-repeat top left/cover;
 }
 
-.iScrollVerticalScrollbar .iScrollIndicator {
-    width: 100%;
-    background: -moz-linear-gradient(top, #cc3f6e 0%, #93004e 100%);
-    background: -webkit-linear-gradient(top,  #cc3f6e 0%,#93004e 100%);
-    background: -o-linear-gradient(top, #cc3f6e 0%,#93004e 100%);
-    background: -ms-linear-gradient(top, #cc3f6e 0%,#93004e 100%);
-    background: linear-gradient(to bottom,  #cc3f6e 0%,#93004e 100%);
-}
 #wrapper {
     position: absolute;
     z-index: 1;
@@ -628,7 +609,7 @@ footer .contact-icon+span {
     text-size-adjust: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     footer .medi-shares {
         margin-bottom: 60px;
     }
@@ -824,7 +805,7 @@ footer .contact-icon+span {
         padding-left: 132px;
     }
     .scroll-box-en>ul {
-        width: 4100px;
+        width: 2600px;
     }
     .scroll-box {
         padding: 140px 0 230px;
