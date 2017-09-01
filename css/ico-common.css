@@ -599,6 +599,7 @@ footer .contact-icon+span {
         padding: 20px 15px;
         width: 50%;
         float: left;
+        min-height: 345px;
     }
     .ico-team-img {
         width: 96px;
