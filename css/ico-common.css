@@ -127,6 +127,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+.ico-book{
+    padding: 15px;
+}
 .header-logo {
     width: 182px;
 }
@@ -338,10 +341,16 @@ ul {
     color: #2c363f;
     font-family: Gotham-Medium;
 }
-
+.ico-team-list{
+    padding: 20px 12px;
+    width: 196px;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
 .ico-team-img {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     -moz-border-radius: 50%;
     border-radius: 50%;
     overflow: hidden;
@@ -410,7 +419,6 @@ ul {
     color: #607d8b;
     margin-top: 8px;
 }
-
 footer {
     background-color: #2c363f;
     padding: 120px 0 48px;
@@ -587,13 +595,14 @@ footer .contact-icon+span {
         margin-top: 40px;
         padding: 0 ;
     }
+    .ico-team-list{
+        padding: 20px 15px;
+        width: 50%;
+        float: left;
+    }
     .ico-team-img {
         width: 96px;
         height: 96px;
-    }
-    .ico-team .ico-team-list {
-        min-height: 310px;
-        margin-top: 40px;
     }
     .ico-counselor>.container {
         padding: 60px 0;
@@ -603,8 +612,7 @@ footer .contact-icon+span {
         margin-top: 24px;
     }
     .ico-counselor .ico-team-list {
-        min-height: 215px;
-        margin-top: 40px;
+        min-height: 325px;
     }
     footer {
         padding: 80px 17px 40px;
@@ -708,12 +716,9 @@ footer .contact-icon+span {
     float: none;
     }
     .scroll-box>ul {
-        width: 3300px;
+        width: 1500px;
         border-top: 4px solid #c8d2d7;
         padding-left: 132px;
-    }
-    .scroll-box-en>ul {
-        width: 2600px;
     }
     .ico-develop-list {
         width: 263px;
