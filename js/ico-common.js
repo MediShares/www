@@ -5,6 +5,3 @@ function loaded() {
         myScroll = new IScroll('#wrapper', { scrollX: true, scrollY: false, scrollbars: 'custom', interactiveScrollbars: true });
     }
 }
-window.onresize = function() {
-    loaded();
-}

@@ -801,7 +801,17 @@ footer .contact-icon+span {
         height: 240px;
     }
 }
-
+@media (min-width: 1450px) {
+    .iScrollHorizontalScrollbar{
+        display: none;
+    }
+    #scroller,.scroll-box,.scroll-box>ul{
+        width: 100%;
+    }
+    .ico-develop-list{
+        width: 20%;
+    }
+}
 
 
 @-webkit-keyframes scale {
