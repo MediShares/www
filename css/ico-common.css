@@ -17,7 +17,13 @@ a,a:hover,a:focus{
     color: #fff;
     text-decoration: none;
 }
-
+button.ico-address-btn{
+    border: none;
+    width: 40px;height:100%;background: url(../images/icon/copy_button@2x.png) no-repeat center/cover;
+}
+button:focus{
+    outline: none;
+}
 input:focus {
     outline: none;
 }
@@ -79,7 +85,15 @@ ul {
 .navbar-default .navbar-brand:focus {
     color: #fff;
 }
-
+.notice{
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+    padding: 15px;
+}
+.notice>h3{
+    font-weight: normal;
+}
 .ico-top {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1)));
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
@@ -164,10 +178,6 @@ ul {
 
 .ico-address-en {
     font-size: 12px;
-}
-
-.ico-address img {
-    display: block;
 }
 
 .address-tit {
