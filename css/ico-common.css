@@ -774,24 +774,6 @@ footer .contact-icon+span {
         top: 0;
         bottom: auto;
     }
-    .scroll-bar {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 330px;
-        height: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-        background-color: #c8d2d7;
-        bottom: 90px;
-    }
-    .scroll-bar>img {
-        position: absolute;
-        top: -13px;
-    }
     .ico-apl-list-en>li>.ico-apl-detail {
         height: 360px;
     }
