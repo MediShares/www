@@ -9,8 +9,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/ico-common.css?v=2017091801">
   <!--[if lte IE 9]>
-  <script src="lib/html5shiv/html5shiv.min.js"></script>
-  <script src="lib/respond/respond.js"></script>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
   <![endif]-->
 </head>
 
@@ -19,7 +19,15 @@
   <div class="ico-top center-align">
     <nav class="ico-nav navbar navbar-default">
       <div class="container">
-        <a href="http://doc.medishares.org/whitepaper/MediShares.Whitepaper.CN.pdf" class="pull-right ico-book" target="_blank">White Paper</a>
+        <div class="dropdown pull-right">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="/cn/">中文</a>
+              </li>
+            </ul>
+        </div>
+        <a href="http://doc.medishares.org/whitepaper/MediShares.Whitepaper.EN.pdf" class="pull-right ico-book" target="_blank">White Paper</a>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">MDS</a>
         </div>
@@ -113,7 +121,7 @@
     </div>
   </div>
   <!-- 保障合约市场 -->
-  <div class="ico-market pd-160">
+  <div class="ico-market pd-160" style="border-bottom:1px solid #e1e6e9;">
     <div class="container">
       <div class="ico-des-title center-align">Model for MDS Profit-making</div>
       <ul class="row  mt-120">
@@ -139,12 +147,6 @@
     <div class="container">
       <div class="ico-des-title">Partners</div>
        <ul class="row  mt-40 center-align">
-        <li class="col-xs-12 ico-partner-list">
-          <a href="http://icoage.com/" target="_blank"><img src="images/partner_1_logo@2x.png" ></a>
-        </li>
-        <li class="col-xs-12  ico-partner-list">
-           <a href="https://coinlist.co/"  target="_blank"><img src="images/partner_2_logo@2x.png" ></a>
-        </li>
         <li class="col-xs-12  ico-partner-list">
           <a href="http://fenbushi.vc/"  target="_blank"><img src="images/partner_3_logo@2x.png" ></a>
         </li>
@@ -274,7 +276,7 @@
   </footer>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/iscroll.js"></script>
+  <script src="js/iscroll.min.js"></script>
   <script src="js/clipboard.min.js"></script>
   <script src="js/ico-common.js?v=2017091801"></script>
 </body>
