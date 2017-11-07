@@ -17,12 +17,8 @@ a,a:hover,a:focus{
     color: #fff;
     text-decoration: none;
 }
-button.ico-address-btn{
+input{
     border: none;
-    width: 40px;height:100%;background: url(../images/icon/copy_button@2x.png) no-repeat center/cover;
-}
-button:focus{
-    outline: none;
 }
 input:focus {
     outline: none;
@@ -36,7 +32,6 @@ ul {
 ::-webkit-scrollbar {
     width: 0px
 }
-
 .pd-160 {
     padding: 160px 0!important;
 }
@@ -85,7 +80,6 @@ ul {
 .navbar-default .navbar-brand:focus {
     color: #fff;
 }
-
 .ico-top {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1)));
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
@@ -117,6 +111,7 @@ ul {
     font-family: Gotham-Book;
     background-color: transparent;
 }
+
 .ico-nav .navbar-brand {
     font-size: 20px;
     line-height: 1.2;
@@ -131,9 +126,10 @@ ul {
     min-width: 0;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 .ico-book{
-    padding: 15px;
+    padding: 15px 15px 15px 0;
 }
 .header-logo {
     width: 182px;
@@ -155,29 +151,46 @@ ul {
     font-family: Gotham-Light;
 }
 
-.ico-address {
-    width: 344px;
+.ico-subscribe{
+    padding:120px 0;
+}
+.ico-subscribe .ico-email{
+    width: 64%;
     height: 48px;
-    -moz-border-radius: 2px;
     border-radius: 2px;
-    background-color: #607d8b;
-    margin: 64px auto 0;
-    line-height: 48px;
-    font-size: 16px;
-    font-family: Gotham-Book;
+    background-color: #e1e6e9;
+    margin-right: 4%;
+    padding-left: 5%;
 }
-
-.ico-address-en {
-    font-size: 12px;
-}
-
-.address-tit {
-    font-size: 12px;
+.ico-subscribe h4{
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 300;
     line-height: 1.67;
-    color: #607d8b;
-    margin-top: 8px;
+    color: #2c363f;
 }
-
+.ico-subscribe .btn{
+    background-color: #607d8b;
+    height: 48px;
+    color: #fff;
+}
+.ico-subscribe .btn1{
+    width: 30%;
+    text-align: center;
+}
+.ico-subscribe .btn2{
+    width: 100%;
+    text-align: center;
+}
+.ico-subscribe .btn2 img{
+    margin-right: 5px;
+}
+.telegram{
+    margin-left: 3%;
+    padding-left: 6%;
+    border-left: 1px solid #e1e6e9;
+    font-family: Gotham-Light;
+}
 .ico-des {
     padding: 120px 0 160px;
     font-family: Gotham-Book;
@@ -398,6 +411,34 @@ ul {
     width: auto;
     height: 100%;
 }
+.ico-paper img{
+    margin: 120px 0 30px;
+
+}
+.ico-paper h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #607d8b;
+}
+.ico-paper p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    color: #607d8b;
+}
+.ico-paper .download{
+    display: inline-block;
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 2px;
+    background-color: #607d8b;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 40px;
+}
 .ico-develop {
     background-color: #e1e6e9;
     overflow: hidden;
@@ -547,7 +588,71 @@ footer .contact-icon+span {
     -o-text-size-adjust: none;
     text-size-adjust: none;
 }
+
+video{
+    margin-top: 80px;
+}
+.carousel{
+    margin-top: 80px;
+}
+.carousel-inner ul li{
+    float: left;
+    width: 30%;
+    background: #fff;
+}
+.carousel-inner ul li a{
+    display: block;
+}
+.carousel-inner ul li:nth-child(2){
+    margin: 0 5%;
+}
+.carousel-inner .carousel-text{
+    padding: 24px 32px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2c363f;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 60px;
+}
+.carousel-inner .media{
+    padding: 0 32px 24px;
+   font-family: Gotham;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #a9b9c1;
+}
+.carousel-control{
+    width: 40px;
+}
+.carousel-control.prev{
+    left: -64px;
+}
+.carousel-control.next{
+    left: auto;
+    right: -64px;
+}
+.carousel-control img{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+#carousel2 .item>a{
+    background: #fff;
+    display: block;
+
+}
 @media (max-width: 767px) {
+    .ico-nav .container{
+        padding: 0;
+    }
     .pd-160 {
         padding: 60px 0!important;
     }
@@ -614,7 +719,7 @@ footer .contact-icon+span {
         margin-top: 24px;
     }
     .ico-counselor .ico-team-list {
-        min-height: 325px;
+        min-height: 255px;
     }
     footer {
         padding: 80px 17px 40px;
@@ -694,6 +799,66 @@ footer .contact-icon+span {
     }
     .iScrollHorizontalScrollbar{
         display: none;
+    }
+    .ico-subscribe{
+        padding: 40px 0 60px;
+    }
+    .telegram{
+        margin-left:0;
+        margin-top: 24px;
+        padding-left: 15px;
+        border-left:none;
+    }
+    .ico-subscribe h4{
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .telegram h4{
+        border-top: 1px solid #E1E6E9;
+        padding-top: 16px;
+    }
+    video{
+    margin-top: 40px;
+    }
+    .ico-paper img{
+        margin-top: 40px;
+    }
+    .carousel{
+        margin-top: 40px;
+    }
+    .carousel-inner .item{
+        padding: 0 24px;
+    }
+    .carousel-control.prev{
+        left: -16px;
+    }
+    .carousel-control.next{
+        right: -16px;
+    }
+    .carousel-inner .carousel-text{
+        padding: 12px 12px 0;
+    }
+    .carousel-inner .media{
+        padding:  0 12px 12px;
+    }
+    .ico-subscribe .ico-email{
+        width: 100%;
+        margin: 0;
+    }
+    .ico-subscribe .btn1{
+        width: 50%;
+        margin: 10px auto;
+        display: block;
+    }
+    .ico-paper .download{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .ico-paper h4{
+        font-size: 16px;
     }
 }
 
