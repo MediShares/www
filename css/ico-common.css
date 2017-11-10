@@ -170,6 +170,7 @@ ul {
 .ico-subscribe .btn{
     background-color: #607d8b;
     height: 48px;
+    line-height: 48px;
     color: #fff;
     font-family: Gotham-Medium;
     font-weight: 500;
