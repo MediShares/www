@@ -12,7 +12,9 @@
     font-family: Gotham-Medium;
     src: url("fonts/Gotham-Medium.otf");
 }
-
+html,body{
+    overflow-x: hidden;
+}
 a,a:hover,a:focus{
     color: #fff;
     text-decoration: none;
@@ -66,7 +68,7 @@ ul {
 .center-align {
     text-align: center!important;
 }
-
+/*top*/
 .navbar-default {
     border: none;
 }
@@ -111,30 +113,24 @@ ul {
     font-family: Gotham-Book;
     background-color: transparent;
 }
-
 .ico-nav .navbar-brand {
     font-size: 20px;
     line-height: 1.2;
     height: auto;
     color: #fff;
 }
-.dropdown {
-    padding: 15px 0;
+.dropdown,.ico-book {
+    padding: 15px;
 }
-
 .dropdown-menu {
     min-width: 0;
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
-.ico-book{
-    padding: 15px 15px 15px 0;
-}
 .header-logo {
     width: 182px;
 }
-
 .invalid-name {
     font-size: 32px;
     font-weight: 300;
@@ -142,7 +138,6 @@ ul {
     margin-top: 96px;
     font-family: Gotham-Light;
 }
-
 .ico-top .slogan {
     font-size: 16px;
     font-weight: 300;
@@ -150,7 +145,7 @@ ul {
     margin-top: 16px;
     font-family: Gotham-Light;
 }
-
+/*订阅资讯*/
 .ico-subscribe{
     padding:120px 0;
 }
@@ -160,7 +155,8 @@ ul {
     border-radius: 2px;
     background-color: #e1e6e9;
     margin-right: 4%;
-    padding-left: 5%;
+    text-align: center;
+    font-family: Gotham-Book;
 }
 .ico-subscribe h4{
     margin-bottom: 24px;
@@ -168,11 +164,16 @@ ul {
     font-weight: 300;
     line-height: 1.67;
     color: #2c363f;
+    font-family: Gotham-Light;
+    font-weight: 300;
 }
 .ico-subscribe .btn{
     background-color: #607d8b;
     height: 48px;
     color: #fff;
+    font-family: Gotham-Medium;
+    font-weight: 500;
+    padding: 0;
 }
 .ico-subscribe .btn1{
     width: 30%;
@@ -186,18 +187,19 @@ ul {
     margin-right: 5px;
 }
 .telegram{
+    width: 38%;
     margin-left: 3%;
-    padding-left: 6%;
+    padding-left: 5%;
     border-left: 1px solid #e1e6e9;
     font-family: Gotham-Light;
 }
+/*什么是 MediShares*/
 .ico-des {
     padding: 120px 0 160px;
     font-family: Gotham-Book;
     color: #2c363f;
     line-height: 1.5;
 }
-
 .ico-des-title {
     font-size: 29px;
     font-weight: 300;
@@ -205,36 +207,30 @@ ul {
     line-height: 1.5;
     font-family: Gotham-Light;
 }
-
 .ico-des ul {
     margin-top: 80px;
 }
-
 .ico-des-list {
     font-size: 14px;
     font-weight: normal;
     line-height: 1.43;
 }
-
 .ico-des-dot {
     float: left;
     margin-right: 15px;
 }
-
 .ico-des-dot+div {
     overflow: hidden;
 }
-
+ /*MediShares 的优势*/
 .ico-superiority ul {
     margin-top: 20px;
 }
-
 .ico-superiority li {
     padding: 100px 50px 0;
     font-family: Gotham-Book;
     color: #2c363f;
 }
-
 .ico-sup-icon {
     float: left;
     width: 32px;
@@ -245,28 +241,23 @@ ul {
     border-radius: 50%;
     overflow: hidden;
 }
-
 .ico-sup-icon>img {
     width: 100%;
 }
-
 .ico-sup-icon+div {
     overflow: hidden;
 }
-
+/*应用场景*/
 .ico-application {
     background-color: #607d8b;
 }
-
 .ico-application .ico-des-title {
     color: #fff;
 }
-
 .ico-apl-list>li {
     padding: 0 16px;
     margin-top: 20px;
 }
-
 .ico-apl-list>li>.ico-apl-detail {
     background-color: #fff;
     background-repeat: no-repeat;
@@ -278,31 +269,24 @@ ul {
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
-
 .ico-apl-list>li:nth-of-type(1)>.ico-apl-detail {
     background-image: url(../images/icon/scenario_icon_1@2x.png);
 }
-
 .ico-apl-list>li:nth-of-type(2)>.ico-apl-detail {
     background-image: url(../images/icon/scenario_icon_2@2x.png);
 }
-
 .ico-apl-list>li:nth-of-type(3)>.ico-apl-detail {
     background-image: url(../images/icon/scenario_icon_3@2x.png);
 }
-
 .ico-apl-list>li:nth-of-type(4)>.ico-apl-detail {
     background-image: url(../images/icon/scenario_icon_4@2x.png);
 }
-
 .ico-apl-list>li:nth-of-type(5)>.ico-apl-detail {
     background-image: url(../images/icon/scenario_icon_5@2x.png);
 }
-
 .ico-apl-list>li:nth-of-type(6)>.ico-apl-detail {
     background-image: url(../images/icon/scenario_icon_6@2x.png);
 }
-
 .ico-apl-detail>.ico-apl-title {
     font-size: 16px;
     font-weight: 500;
@@ -310,7 +294,6 @@ ul {
     color: #2c363f;
     font-family: Gotham-Medium;
 }
-
 .ico-apl-info {
     margin-top: 9px;
     font-size: 12px;
@@ -318,12 +301,24 @@ ul {
     color: #607d8b;
     font-family: Gotham-Book;
 }
-
+/*视频*/
+.ico-video .video-title{
+    margin: 40px 0 80px;
+    font-family: Gotham-Book;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color:#2c363f;
+}
+.ico-video .video-iframe{
+    width: 100%;
+    height: 42vw;
+}
+/*保障合约市场*/
 .ico-market-list {
     position: relative;
     padding-right: 60px;
 }
-
 .ico-market-list:before {
     position: absolute;
     top: -40px;
@@ -335,19 +330,15 @@ ul {
     color: #f2f5f6;
     z-index: -1;
 }
-
 .ico-market-list.list1:before {
     content: '1';
 }
-
 .ico-market-list.list2:before {
     content: '2';
 }
-
 .ico-market-list.list3:before {
     content: '3';
 }
-
 .ico-market-title {
     font-size: 14px;
     font-weight: 500;
@@ -355,6 +346,12 @@ ul {
     color: #2c363f;
     font-family: Gotham-Medium;
 }
+/*APP*/
+.ico-app{
+    background: #e1e6e9;
+    padding-top: 120px;
+}
+/*团队*/
 .ico-team-list{
     padding: 20px 12px;
     width: 196px;
@@ -370,11 +367,9 @@ ul {
     overflow: hidden;
     margin: 0 auto;
 }
-
 .ico-team-img>img {
     width: 100%;
 }
-
 .ico-team-name {
     margin-top: 32px;
     font-size: 20px;
@@ -383,7 +378,6 @@ ul {
     color: #607d8b;
     font-family: Gotham-Medium;
 }
-
 .ico-team-info {
     margin-top: 8px;
     font-size: 12px;
@@ -391,26 +385,25 @@ ul {
     color: #a9b9c1;
     font-family: Gotham-Book;
 }
-
+/*顾问*/
 .ico-counselor>.container {
     border-top: 1px solid #e1e6e9;
     padding: 160px 15px;
 }
-
+/*合作伙伴*/
 .ico-partner-list {
     height: 64px;
     margin-top: 40px;
 }
-
 .ico-partner-list>a {
     display: inline-block;
     height: 100%;
 }
-
 .ico-partner-list img {
     width: auto;
     height: 100%;
 }
+/*白皮书*/
 .ico-paper img{
     margin: 120px 0 30px;
 
@@ -420,12 +413,14 @@ ul {
     font-weight: 500;
     line-height: 1.33;
     color: #607d8b;
+    font-family: Gotham-Medium;
 }
 .ico-paper p{
     font-size: 14px;
     font-weight: 300;
     line-height: 1.43;
     color: #607d8b;
+    font-family: Gotham-Book;
 }
 .ico-paper .download{
     display: inline-block;
@@ -438,14 +433,15 @@ ul {
     font-weight: 500;
     color: #fff;
     margin-top: 40px;
+    font-family: Gotham-Medium;
 }
+/*发展路线图*/
 .ico-develop {
     background-color: #e1e6e9;
     overflow: hidden;
     position: relative;
     height: 900px;
 }
-
 .develop-box .dev-date {
     font-family: Gotham-Medium;
     font-size: 20px;
@@ -453,7 +449,6 @@ ul {
     line-height: 1.5;
     color: #a9b9c1;
 }
-
 .develop-box .dev-des {
     font-family: Gotham-Book;
     font-size: 14px;
@@ -461,76 +456,7 @@ ul {
     color: #607d8b;
     margin-top: 8px;
 }
-footer {
-    background-color: #2c363f;
-    padding: 120px 0 48px;
-}
-
-footer .row {
-    padding-bottom: 120px;
-}
-
-footer .medi-shares {
-    margin: 0;
-}
-
-footer .medi-shares>img {
-    height: 40px;
-}
-
-footer .contact-list>li {
-    margin-top: 24px;
-}
-
-footer .contact-list>li:first-of-type {
-    margin-top: 0;
-}
-
-footer .contact-list a {
-    display: block;
-}
-
-footer .contact-icon {
-    width: 40px;
-    height: 40px;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline-block;
-    margin-right: 16px;
-    vertical-align: middle;
-    overflow: hidden;
-}
-
-footer .contact-icon>img {
-    width: 100%;
-}
-
-footer .contact-icon+span {
-    font-family: Gotham-Medium;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.25;
-    color: #607d8b;
-    vertical-align: middle;
-}
-
-.code-tip {
-    font-family: Gotham-Medium;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.33;
-    color: #607d8b;
-    margin-top: 24px;
-    white-space: nowrap;
-}
-
-.copyright {
-    font-family: Gotham-Book;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #607d8b;
-}
+/*发展路线图的导航条*/
 .iScrollHorizontalScrollbar {
     position: absolute;
     z-index: 9999;
@@ -550,14 +476,12 @@ footer .contact-icon+span {
     width: 100%;
     border-top: 2px solid #c8d2d7;
 }
-
 .iScrollHorizontalScrollbar .iScrollIndicator {
     position: absolute;
     width: 64px!important;
     height: 24px!important;
     background:url(../images/icon/slide_btn@2x.png) no-repeat top left/cover;
 }
-
 #wrapper {
     position: absolute;
     z-index: 1;
@@ -567,7 +491,6 @@ footer .contact-icon+span {
     right: 0;
     overflow: hidden;
 }
-
 #scroller {
     position: absolute;
     z-index: 1;
@@ -588,10 +511,7 @@ footer .contact-icon+span {
     -o-text-size-adjust: none;
     text-size-adjust: none;
 }
-
-video{
-    margin-top: 80px;
-}
+/*媒体报道*/
 .carousel{
     margin-top: 80px;
 }
@@ -630,11 +550,11 @@ video{
     width: 40px;
 }
 .carousel-control.prev{
-    left: -64px;
+    left: -16px;
 }
 .carousel-control.next{
     left: auto;
-    right: -64px;
+    right: -16px;
 }
 .carousel-control img{
     top: 0;
@@ -649,10 +569,105 @@ video{
     display: block;
 
 }
-@media (max-width: 767px) {
-    .ico-nav .container{
-        padding: 0;
+.view-more{
+    margin-top: 60px;
+    text-align: center;
+    display: block;
+}
+.view-more>span{
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    background:#607d8b;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Gotham-Medium;
+    font-weight: 500;
+}
+/*页脚*/
+footer {
+    background-color: #2c363f;
+    padding: 120px 0 48px;
+}
+
+footer .row {
+    padding-bottom: 120px;
+}
+
+footer .medi-shares {
+    margin: 0;
+}
+
+footer .medi-shares>img {
+    height: 40px;
+}
+
+footer .contact-list>li {
+    margin-top: 24px;
+}
+
+footer .contact-list>li:first-of-type {
+    margin-top: 0;
+}
+
+footer .contact-list a {
+    display: block;
+}
+footer .contact-icon {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+footer .contact-icon>img {
+    width: 100%;
+}
+footer .contact-icon+span {
+    font-family: Gotham-Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #607d8b;
+    vertical-align: middle;
+}
+.code-tip {
+    font-family: Gotham-Medium;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #607d8b;
+    margin-top: 24px;
+    white-space: nowrap;
+}
+.copyright {
+    font-family: Gotham-Book;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #607d8b;
+}
+/*小于992px屏幕 xs+sm*/
+@media (max-width: 991px) {
+    /*应用场景*/
+    .ico-apl-list-en>li>.ico-apl-detail {
+        height: 360px;
     }
+    /*媒体报道*/
+    .carousel{
+        margin-top: 40px;
+    }
+    .carousel-inner .item{
+        padding: 0 24px;
+    }
+}
+/*小于768px屏幕 手机 xs*/
+@media (max-width: 767px) {
+    /*公共类*/
     .pd-160 {
         padding: 60px 0!important;
     }
@@ -663,6 +678,10 @@ video{
     .mt-100 {
         margin-top: 40px!important;
     }
+    /*头部*/
+    .ico-nav .container{
+        padding: 0;
+    }
     .invalid-name {
         font-size: 24px;
         margin-top: 80px;
@@ -672,6 +691,25 @@ video{
         font-size: 14px;
         padding: 0 40px;
     }
+    /*订阅资讯*/
+    .ico-subscribe{
+        padding: 40px 0 60px;
+    }
+    .telegram{
+        margin: 24px auto 0;
+        padding-left: 15px;
+        border-left:none;
+        width: 90%;
+    }
+    .ico-subscribe h4{
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .telegram h4{
+        border-top: 1px solid #E1E6E9;
+        padding-top: 16px;
+    }
+    /*什么是 MediShares*/
     .ico-des {
         padding: 60px 0 80px;
     }
@@ -685,15 +723,22 @@ video{
     .ico-des>.container>ul,.ico-superiority>.container>ul,.ico-market>.container>ul{
         margin: 0;
     }
+    /*优势*/
     .ico-superiority li {
         padding: 40px 0 0;
     }
+    /*应用场景*/
     .ico-apl-list>li {
         margin-top: 8px;
     }
     .ico-apl-list-en>li>.ico-apl-detail {
         height: auto;
     }
+    /*视频*/
+    .ico-video .video-title{
+        margin: 20px 0 40px;
+    }
+    /*保障合约市场*/
     .ico-market-list:before {
         display: none;
     }
@@ -701,6 +746,11 @@ video{
         margin-top: 40px;
         padding: 0 ;
     }
+    /*APP*/
+    .ico-app{
+        padding-top: 60px;
+    }
+    /*团队*/
     .ico-team-list{
         padding: 20px 15px;
         width: 50%;
@@ -711,6 +761,7 @@ video{
         width: 96px;
         height: 96px;
     }
+    /*顾问*/
     .ico-counselor>.container {
         padding: 60px 0;
         margin: 0 32px;
@@ -721,6 +772,7 @@ video{
     .ico-counselor .ico-team-list {
         min-height: 255px;
     }
+    /*页脚*/
     footer {
         padding: 80px 17px 40px;
     }
@@ -745,13 +797,10 @@ video{
     footer .row {
         padding-bottom: 80px;
     }
-    .ico-address {
-        width: 100%;
-    }
+    /*发展路线图*/
     .scroll-box>ul {
         padding: 40px 32px 0 42px;
     }
-
     .ico-develop{
         height: auto;
     }
@@ -762,11 +811,9 @@ video{
         bottom: auto;
         right: auto;
     }
-
     #scroller {
         position: relative;
     }
-
     .ico-develop-list {
         padding: 0 0 40px 32px;
         position: relative;
@@ -800,41 +847,11 @@ video{
     .iScrollHorizontalScrollbar{
         display: none;
     }
-    .ico-subscribe{
-        padding: 40px 0 60px;
-    }
-    .telegram{
-        margin-left:0;
-        margin-top: 24px;
-        padding-left: 15px;
-        border-left:none;
-    }
-    .ico-subscribe h4{
-        margin-bottom: 12px;
-        text-align: center;
-    }
-    .telegram h4{
-        border-top: 1px solid #E1E6E9;
-        padding-top: 16px;
-    }
-    video{
-    margin-top: 40px;
-    }
+    /*白皮书*/
     .ico-paper img{
         margin-top: 40px;
     }
-    .carousel{
-        margin-top: 40px;
-    }
-    .carousel-inner .item{
-        padding: 0 24px;
-    }
-    .carousel-control.prev{
-        left: -16px;
-    }
-    .carousel-control.next{
-        right: -16px;
-    }
+    /*媒体报道*/
     .carousel-inner .carousel-text{
         padding: 12px 12px 0;
     }
@@ -861,11 +878,8 @@ video{
         font-size: 16px;
     }
 }
-
+/*小于等于360px屏幕*/
 @media (max-width: 360px) {
-    .ico-address-en {
-        font-size: 11px;
-    }
     footer .contact-icon {
         margin-right: 3px;
     }
@@ -873,7 +887,7 @@ video{
         font-size: 14px;
     }
 }
-
+/*大于等于768px屏幕 包含平板 sm+md+lg*/
 @media (min-width: 768px) {
     .ico-partner-list {
     width: auto;
@@ -930,26 +944,12 @@ video{
         top: 0;
         bottom: auto;
     }
-    .ico-apl-list-en>li>.ico-apl-detail {
-        height: 360px;
-    }
-
 }
-
-@media (min-width: 992px) {
-    .ico-apl-list-en>li>.ico-apl-detail {
-        height: 260px;
-    }
-}
-
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .container {
         width: 1080px;
     }
-    .ico-apl-list-en>li>.ico-apl-detail {
-        height: 240px;
-    }
-}
+}*/
 @media (min-width: 1450px) {
     .iScrollHorizontalScrollbar{
         display: none;
