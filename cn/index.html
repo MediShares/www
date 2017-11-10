@@ -10,7 +10,7 @@
   <title>MediShares 官网 - 全球区块链相互保障合约市场</title>
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/ico-common.css?v=2017090401">
+  <link rel="stylesheet" type="text/css" href="../css/ico-common.min.css?v=2017111001">
   <!--[if lte IE 9]>
   <script src="../js/html5shiv.min.js"></script>
   <script src="../js/respond.min.js"></script>
@@ -22,7 +22,7 @@
   <div class="ico-top center-align">
     <nav class="ico-nav navbar navbar-default">
       <div class="container">
-        <a href="http://doc.medishares.org/whitepaper/MediShares.Whitepaper.CN.pdf" class="pull-right ico-book" target="_blank">白皮书</a>
+        <a href="http://doc.medishares.org/whitepaper/MediShares.Whitepaper.CN.pdf" class="pull-right ico-book hidden-xs" target="_blank">白皮书</a>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">MDS</a>
         </div>
@@ -34,6 +34,32 @@
       <div class="slogan">用区块链技术改变生产关系，让保障回归本质，将利益分享给社区</div>
     </div>
     <div class="bg-cover"></div>
+  </div>
+  <!-- 订阅最新资讯 -->
+  <div class="ico-subscribe ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <h4>订阅我们的最新资讯</h4>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="https://medishares.us17.list-manage.com/subscribe/post?u=d50dc5ddc7e4f7d2a1368320e&amp;id=42be46d271" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                   <input type="email" value="" name="EMAIL" class="email ico-email" id="mce-EMAIL" placeholder="输入您的邮箱地址" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d50dc5ddc7e4f7d2a1368320e_42be46d271" tabindex="-1" value=""></div>
+                    <span class="clear"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button btn btn1"></span>
+                </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+        <div class="col-sm-5 telegram">
+          <h4>Telegram</h4>
+          <a href="https://t.me/joinchat/EeODLBGPo3S0WUg1ZGID_Q" class='btn btn2' target="_blank"><img src="../images/icon/telegram_icon@2x.png" width='24'><span>加入讨论</span></a>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- 什么是 MediShares -->
   <div class="ico-des bgf2">
@@ -116,10 +142,10 @@
     </div>
   </div>
   <!-- 保障合约市场 -->
-  <div class="ico-market pd-160" style="border-bottom:1px solid #e1e6e9;">
+  <div class="ico-market pd-160">
     <div class="container">
       <div class="ico-des-title center-align">保障合约市场</div>
-      <ul class="row  mt-120">
+      <ul class="mt-120">
         <li class="col-xs-12 col-sm-4 ico-market-list list1">
           <div class="ico-market-title">只有符合 MediShare 标准的保障合约才能在市场上架，这些标准包括且不限：</div>
           <ul class="ico-apl-info">
@@ -137,11 +163,21 @@
       </ul>
     </div>
   </div>
+  <!-- APP -->
+  <div class="ico-app">
+    <div class="container">
+      <div class="ico-des-title center-align">MediShares App</div>
+      <img src="../images/MediSharesApp.png" width="100%">
+    </div>
+  </div>
   <!-- 合作伙伴 -->
   <div class="ico-partner pd-160  center-align">
     <div class="container">
       <div class="ico-des-title">合作伙伴</div>
       <ul class="row  mt-40 center-align">
+        <li class="col-xs-12  ico-partner-list">
+          <a href="https://infocorp.io/"  target="_blank"><img src="../images/partner_7_logo@2x.png" ></a>
+        </li>
         <li class="col-xs-12  ico-partner-list">
           <a href="http://fenbushi.vc/"  target="_blank"><img src="../images/partner_3_logo@2x.png" ></a>
         </li>
@@ -155,6 +191,26 @@
            <a href="http://www.zhongtuobang.com/"  target="_blank"><img src="../images/partner_4_logo@2x.png" ></a>
         </li>
       </ul>
+    </div>
+  </div>
+  <!-- 白皮书 -->
+  <div class="ico-paper pd-160 bgf2">
+    <div class="container center-align">
+      <div class="ico-des-title  center-align">白皮书</div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-1 col-xs-6">
+          <img src="../images/white-cn.jpg" width="100%">
+          <h4>白皮书（完整版）</h4>
+          <p class="hidden-xs hidden-sm">阅读项目的完整信息，了解我们的发展目标及现状。</p>
+          <a class="download" target="_blank" href="http://doc.medishares.org/whitepaper/MediShares.Whitepaper.CN.pdf" download>下载 PDF 文档</a>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2 col-xs-6">
+          <img src="../images/light-cn.jpg" width="100%">
+          <h4>白皮书（简版）</h4>
+          <p class="hidden-xs hidden-sm">简要了解项目的理念和策略。</p>
+          <a class="download" target="_blank" href="http://doc.medishares.org/whitepaper/MDS-lightpaper-CN.pdf" download>下载 PDF 文档</a>
+        </div>
+      </div>
     </div>
   </div>
   <!-- 发展路线图 -->
@@ -221,6 +277,81 @@
       </div>
     </div>
   </div>
+  <!-- 媒体报道 -->
+  <div class="ico-report pd-160 bgf2">
+    <div class="container">
+      <div class="ico-des-title  center-align">媒体报道</div>
+      <div id="carousel-example-generic" class="carousel slide  hidden-sm hidden-xs" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <ul class="clearfix">
+              <li>
+                <a href="https://mp.weixin.qq.com/s/lzlgWhnaTFLBqABOyLpkBw" target="_blank">
+                  <img src="../images/news_01.jpg" width="100%">
+                  <div class="carousel-text">谁来击败歌利亚！MediShares 启动相互保障合约市场
+                  </div>
+                  <div class="media"> MediShares</div>
+                </a>
+              </li>
+              <li>
+                <a href="https://mp.weixin.qq.com/s/mWgk2E4fDWTUPrw9B0w33Q"  target="_blank">
+                  <img src="../images/news_02.jpg" width="100%">
+                  <div class="carousel-text">比利时银行保险集团董事会主席一行访问Medishares 换个姿势看保险
+                  </div>
+                  <div class="media"> MediShares</div>
+                </a>
+              </li>
+              <li>
+                <a href="https://mp.weixin.qq.com/s/BBFcWzucAksw-icv0fLgLg"  target="_blank">
+                  <img src="../images/news_03.jpg" width="100%">
+                  <div class="carousel-text">MediShares官网上线，更多资讯，敬请期待！
+                  </div>
+                  <div class="media"> MediShares</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="carousel2" class="carousel slide hidden-md hidden-lg" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <a href="https://mp.weixin.qq.com/s/lzlgWhnaTFLBqABOyLpkBw" target="_blank">
+              <img src="../images/news_01.jpg" width="100%">
+              <div class="carousel-text">谁来击败歌利亚！MediShares 启动相互保障合约市场
+              </div>
+              <div class="media"> MediShares</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://mp.weixin.qq.com/s/mWgk2E4fDWTUPrw9B0w33Q"  target="_blank">
+              <img src="../images/news_02.jpg" width="100%">
+              <div class="carousel-text">比利时银行保险集团董事会主席一行访问Medishares 换个姿势看保险
+              </div>
+              <div class="media"> MediShares</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://mp.weixin.qq.com/s/BBFcWzucAksw-icv0fLgLg"  target="_blank">
+              <img src="../images/news_03.jpg" width="100%">
+              <div class="carousel-text">MediShares官网上线，更多资讯，敬请期待！
+              </div>
+              <div class="media"> MediShares</div>
+            </a>
+          </div>
+        </div>
+        <a class="carousel-control prev" href="#carousel2" role="button" data-slide="prev">
+          <img src="../images/icon/previous_button@2x.png" width="24">
+        </a>
+        <a class="carousel-control next" href="#carousel2" role="button" data-slide="next">
+          <img src="../images/icon/next_button@2x.png" width="24">
+        </a>
+      </div>
+      <a href="http://weibo.com/MediShares" class="view-more" target="_blank">
+        <span>更多&nbsp;&nbsp;&nbsp;></span>
+      </a>
+    </div>
+  </div>
   <!-- 底部 -->
   <footer>
     <div class="container">
@@ -230,6 +361,12 @@
         </div>
         <div class="col-xs-12 col-sm-4">
          <ul class="contact-list">
+           <li class="col-xs-6 col-sm-12">
+             <a href="https://t.me/joinchat/EeODLBGPo3S0WUg1ZGID_Q" target="_blank">
+                <span class="contact-icon"><img src="../images/icon/sns-icon-github@2x.png"></span>
+                <span>Telegram</span>
+             </a>
+           </li>
            <li class="col-xs-6 col-sm-12">
              <a href="https://github.com/MediShares" target="_blank">
                 <span class="contact-icon"><img src="../images/icon/sns_icon_github@2x.png"></span>
@@ -261,14 +398,14 @@
           <div class="code-tip">加入 MediShares 官方微信群</div>
         </div>
       </div>
-      <div class="center-align copyright">© 2017 MediShares. All rights reserved.</div>
+      <div class="center-align copyright">© 2017 Singapore MediShares Foundation Ltd. All rights reserved.</div>
     </div>
   </footer>
   <script src="../js/jquery-3.2.1.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/iscroll.min.js"></script>
   <script src="../js/clipboard.min.js"></script>
-  <script src="../js/ico-common.js?v=2017090102"></script>
+  <script src="../js/ico-common.js?v=2017111001"></script>
 </body>
 
 </html>
