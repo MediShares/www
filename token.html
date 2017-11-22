@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>MediShares - A Global Mutual Insurance Marketplace on the Blockchain</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ico-common.min.css?v=2017112101">
+  <!--[if lte IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="bgf2">
+  <div class="token">
+    <nav class="token-nav navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="dropdown pull-right">
+          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="user-name">yangzuoqi@gmail.com</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">SIGN OUT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-header">
+          <img src="images/header-logo@2x.png" class="header-logo">
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="main-content col-sm-8">
+          <div class="welcome card center-align">
+              <h3>Welcome!</h3>
+              <p>Here you will be able to purchase MDS Tokens.</p>
+          </div>
+          <div class="card referral-link">
+            <div class="step">YOUR REFERRAL LINK</div>
+            <div class="ico-address">
+              <button class="pull-right address-btn" id="ico-add1" data-clipboard-target="#ico-cont1" data-clipboard-action="copy">COPY LINK</button>
+              <div id="ico-cont1">https://regabbp.rega.life/?ref=8628c56c5829c4fe47452408</div>
+            </div>
+            <p>This is your MDS referral link. You can use it to share the project with your friends and other interested parties. If any of them sign up with this link, they will be added to your referral program. Your reward amounts to 5.0% of all MDS tokens purchased by your referrals.</p>
+            <div class="color-60">通過這個鏈接邀請您的朋友，您將可以獲得朋友購買的 MDS 總數 5% 的額外獎勵。</div>
+          </div>
+          <div class="card">
+            <div class="step">STEP 1</div>
+            <h4 class="center-align">Add Your ETH to Whitelist</h4>
+            <p class="center-align title">將您的 ETH 地址加入白名單</p>
+            <div class="headline">Number of ETH You Plan to Deposit</div>
+            <p class="color-60 subtitle">您預計投入的 ETH 數量</p>
+            <div class="plan-deposit"><input type="text" placeholder="1"><span>ETH = 5000 MDS</span></div>
+            <div class="eth-address">
+              <div class="headline">Your ETH Address</div>
+              <p class="color-60 subtitle">您的 ETH 地址</p>
+              <button class="pull-right address-btn">ADD</button>
+              <input type="text" placeholder="Please enter your ETH address">
+            </div>
+            <p>Do not use ethereum address from cryptocurrency exchanges. You need a token compatible ethereum wallet.</p>
+            <div class="color-60">請使用 ETH 錢包地址，不要使用交易所地址。</div>
+          </div>
+          <div class="card">
+            <div class="step">STEP 2</div>
+            <h4 class="center-align">Make A Deposit</h4>
+            <div class="center-align title">將您的 ETH 轉賬到下面的地址</div>
+            <div class="deposit-contain">
+              <div class="row">
+                <div class="qr-code col-sm-5">
+                  <h5>Deposit funds by scanning below</h5>
+                  <div class="img-box">
+                    <img src="images/icon/qr-code.png">
+                  </div>
+                </div>
+                <div class="direct-deposit col-sm-7">
+                  <h5>Or Direct Deposit to</h5>
+                  <div class="svg-box" id="ico-add2" data-clipboard-target="#ico-cont2" data-clipboard-action="copy">
+                    <div id="ico-cont2">0x60256530d074465406Df460B6f38424ab5dF6BED</div>
+                  </div>
+                </div>
+              </div>
+              <div class="deposit-tip">
+                  Please make sure your deposit equals or exceeds the minimum purchase amount (at the current exchange rate it is <span class="color-21">0.1 ETH</span>).
+                  <p>最小轉賬數量 <span class="color-21">0.1 ETH</span>。</p>
+              </div>
+            </div>
+            <div class="headline">It may need some time to confirm your transaction. You will receive and email about the successful deposit.</div>
+            <div class="color-60 subtitle">確認您的轉賬需要一些時間，請耐心等待。確認完成后，您會收到一封郵件。</div>
+            <div class="headline">Please send ethereum transactions from the same address already approved in whitelist.</div>
+            <div class="color-60 subtitle">請使用白名單中的 ETH 地址進行轉賬。</div>
+            <div class="headline">You can send more than 1 transaction from your ETH address.</div>
+            <div class="color-60 subtitle">您可進行多筆 ETH 轉賬。</div>
+          </div>
+          <div class="card">
+            <div class="step">Tokens Distributed</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                47080.12 Tokens
+              </div>
+            </div>
+            <div class="number color-60">
+              <span class="pull-right">50000000 MDS</span>
+              <span>0 MDS</span>
+            </div>
+          </div>
+        </div>
+        <div class="side-content col-sm-4">
+          <div class="card pd0">
+            <div class="card-content">
+              <div>MY DEPOSIT ETH</div>
+              <div class="color-60">已轉入 ETH 數量</div>
+              <div class="num">1.2</div>
+            </div>
+            <div class="card-content">
+              <div>MY MDS TOKENS</div>
+              <div class="color-60">已獲得的 MDS 數量</div>
+              <div class="num">6000</div>
+            </div>
+            <div class="card-content">
+              <div>MY REFERRAL AWARD TOKENS</div>
+              <div class="color-60">推薦好友獲得的 MDS 獎勵</div>
+              <div class="num">0</div>
+            </div>
+            <div class="card-content">
+              <div>MDS TOKEN PRICE</div>
+              <div class="color-60">MDS 兌換比例</div>
+              <div class="num">1 ETH = 5000 MDS</div>
+            </div>
+          </div>
+          <div class="countdown center-align">
+            <div class="countdown-title">ICO of MDS starts at 20:00 (GMT+8) DEC 15</div>
+            <div class="countdown-line">THE COUNTDOWN</div>
+            <div id="xsbar-countdown" class="hidden-xs hidden-md hidden-lg">
+              <div id="xsflipcountdown-box" data-date-end="2017-12-15T20:00:00Z"></div>
+              <table align="center" class="flipcountdown-footer">
+                <tbody>
+                  <tr>
+                    <td class="flipcountdown-footer-labels">DAYS</td>
+                    <td class="flipcountdown-footer-labels">HOURS</td>
+                    <td class="flipcountdown-footer-labels">MINS</td>
+                    <td class="flipcountdown-footer-labels">SECS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="sidebar-countdown" class="hidden-sm">
+              <div id="flipcountdown-box" data-date-end="2017-12-15T20:00:00Z"></div>
+              <table align="center" class="flipcountdown-footer">
+                <tbody>
+                  <tr>
+                    <td class="flipcountdown-footer-labels">DAYS</td>
+                    <td class="flipcountdown-footer-labels">HOURS</td>
+                    <td class="flipcountdown-footer-labels">MINS</td>
+                    <td class="flipcountdown-footer-labels">SECS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/clipboard.min.js"></script>
+  <script src="js/ico-common.js?v=2017112101"></script>
+  <script type="text/javascript">
+    $(function(){
+      copy('#ico-add1','ico-cont1');
+      copy('#ico-add2','ico-cont2');
+    })
+  </script>
+</body>
+
+</html>
