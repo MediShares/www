@@ -145,6 +145,29 @@ ul {
     margin-top: 16px;
     font-family: Gotham-Light;
 }
+.exchange{
+    margin-top: 80px;
+    padding-top:80px ;
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+}
+.exchange>p{
+    font-family: Gotham-Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.exchange li{
+    display: inline-block;
+    margin: 10px;
+}
+.exchange li a{
+    display: inline-block;
+}
+.exchange li img{
+    height: 60px;
+}
+
 /*订阅资讯*/
 .ico-subscribe{
     padding:120px 0;
@@ -691,6 +714,13 @@ footer .contact-icon+span {
     .ico-top .slogan {
         font-size: 14px;
         padding: 0 40px;
+    }
+    .exchange{
+      margin-top: 40px;
+      padding-top: 40px;
+    }
+    .exchange p{
+      margin-bottom: 25px;
     }
     /*订阅资讯*/
     .ico-subscribe{
