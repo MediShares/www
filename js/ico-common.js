@@ -25,11 +25,21 @@ var browser = {
         };
     }()
 }
-// 下载PDF
-if (browser.versions.android) {
-	var ua = window.navigator.userAgent.toLowerCase();
-	// 判断是否为微信浏览器
-    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
-        $(".download").removeAttr('download');
+$(function(){
+    // 下载PDF
+    if (browser.versions.android) {
+        var ua = window.navigator.userAgent.toLowerCase();
+        // 判断是否为微信浏览器
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            $(".download").removeAttr('download');
+        }
     }
-}
+    // qq官网
+    $(".qq").on('mouseover',function(){
+        $('.qq-code').stop().show();
+    })
+    $(".qq").on('mouseout',function(){
+        $('.qq-code').stop().hide();
+    })
+})
+
