@@ -629,8 +629,15 @@ footer .medi-shares>img {
 
 footer .contact-list>li {
     margin-top: 24px;
+    position: relative;
 }
-
+footer .contact-list .qq-code{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width:150px;
+    display: none;
+}
 footer .contact-list>li:first-of-type {
     margin-top: 0;
 }
