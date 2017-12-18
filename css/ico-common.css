@@ -34,6 +34,18 @@ ul {
 ::-webkit-scrollbar {
     width: 0px
 }
+.color-21 {
+  color: #2196f3!important;
+}
+
+.color-21:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.color-21:focus {
+  color: #2196f3;
+}
 .pd-160 {
     padding: 160px 0!important;
 }
@@ -633,9 +645,9 @@ footer .contact-list>li {
 }
 footer .contact-list .qq-code{
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 50px;
-    width:150px;
+    width:200px;
     display: none;
 }
 footer .contact-list>li:first-of-type {
@@ -681,6 +693,52 @@ footer .contact-icon+span {
     font-size: 14px;
     line-height: 1.43;
     color: #607d8b;
+}
+/*内容页*/
+
+.document {
+  padding: 5% 10px;
+  background-color: #607d8b!important;
+}
+.document .container {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.document .headline {
+  font-family: Gotham-Medium;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 48px 0;
+}
+
+.document .subtitle {
+  font-family: Gotham-Medium;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.67;
+  margin: 48px 0 32px;
+}
+
+.document .content {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.document ul {
+  list-style: disc;
+  padding-left: 25px;
+  margin: 32px 0;
+}
+
+.document hr {
+  border-top: 1px solid #2c363f;
+  margin-top: 159px;
+}
+.bgcolor-60 {
+  background-color: #607d8b!important;
 }
 /*小于992px屏幕 xs+sm*/
 @media (max-width: 991px) {
@@ -834,6 +892,10 @@ footer .contact-icon+span {
     }
     footer .row {
         padding-bottom: 80px;
+    }
+    footer .contact-list .qq-code{
+        left: 0;
+        width: 150px;
     }
     /*发展路线图*/
     .scroll-box>ul {
