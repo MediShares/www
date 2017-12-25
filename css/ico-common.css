@@ -39,12 +39,18 @@ ul {
 }
 
 .color-21:hover {
-  color: #2196f3;
+  color: #2196f3!important;
   text-decoration: underline;
 }
 
 .color-21:focus {
-  color: #2196f3;
+  color: #2196f3!important;
+}
+.color-f9{
+    color: #FF9800!important;
+}
+.color-f9:hover,.color-f9:focus{
+    color: #FF9800!important;
 }
 .pd-160 {
     padding: 160px 0!important;
@@ -179,7 +185,6 @@ ul {
 .exchange li img{
     height: 60px;
 }
-
 /*订阅资讯*/
 .ico-subscribe{
     padding:120px 0;
@@ -638,7 +643,6 @@ footer .medi-shares {
 footer .medi-shares>img {
     height: 40px;
 }
-
 footer .contact-list>li {
     margin-top: 24px;
     position: relative;
@@ -700,6 +704,7 @@ footer .contact-icon+span {
   padding: 5% 10px;
   background-color: #607d8b!important;
 }
+
 .document .container {
   background: #fff;
   padding-top: 50px;
@@ -711,15 +716,15 @@ footer .contact-icon+span {
   font-size: 32px;
   font-weight: 500;
   line-height: 1.5;
-  margin: 48px 0;
+  margin: 30px 0;
 }
 
 .document .subtitle {
   font-family: Gotham-Medium;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.67;
-  margin: 48px 0 32px;
+  margin: 30px 0 20px;
 }
 
 .document .content {
@@ -730,9 +735,11 @@ footer .contact-icon+span {
 .document ul {
   list-style: disc;
   padding-left: 25px;
-  margin: 32px 0;
+  margin: 10px 0 20px;
 }
-
+.document ol{
+    margin: 10px 0 20px;
+}
 .document hr {
   border-top: 1px solid #2c363f;
   margin-top: 159px;
@@ -781,11 +788,11 @@ footer .contact-icon+span {
         padding: 0 40px;
     }
     .exchange{
-      margin-top: 40px;
-      padding-top: 40px;
+        margin-top: 40px;
+        padding-top: 40px;
     }
     .exchange p{
-      margin-bottom: 25px;
+        margin-bottom: 25px;
     }
     /*订阅资讯*/
     .ico-subscribe{
@@ -976,6 +983,15 @@ footer .contact-icon+span {
     }
     .ico-paper h4{
         font-size: 16px;
+    }
+    .document .container {
+      padding-top: 10px;
+    }
+    .document .headline {
+      margin: 20px 0;
+    }
+    .document .subtitle {
+      margin: 20px 0 10px;
     }
 }
 /*小于等于360px屏幕*/
