@@ -34,6 +34,24 @@ ul {
 ::-webkit-scrollbar {
     width: 0px
 }
+.color-21 {
+  color: #2196f3!important;
+}
+
+.color-21:hover {
+  color: #2196f3!important;
+  text-decoration: underline;
+}
+
+.color-21:focus {
+  color: #2196f3!important;
+}
+.color-f9{
+    color: #FF9800!important;
+}
+.color-f9:hover,.color-f9:focus{
+    color: #FF9800!important;
+}
 .pd-160 {
     padding: 160px 0!important;
 }
@@ -167,7 +185,6 @@ ul {
 .exchange li img{
     height: 60px;
 }
-
 /*订阅资讯*/
 .ico-subscribe{
     padding:120px 0;
@@ -626,16 +643,15 @@ footer .medi-shares {
 footer .medi-shares>img {
     height: 40px;
 }
-
 footer .contact-list>li {
     margin-top: 24px;
     position: relative;
 }
 footer .contact-list .qq-code{
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 50px;
-    width:150px;
+    width:200px;
     display: none;
 }
 footer .contact-list>li:first-of-type {
@@ -682,6 +698,55 @@ footer .contact-icon+span {
     line-height: 1.43;
     color: #607d8b;
 }
+/*内容页*/
+
+.document {
+  padding: 5% 10px;
+  background-color: #607d8b!important;
+}
+
+.document .container {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.document .headline {
+  font-family: Gotham-Medium;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+.document .subtitle {
+  font-family: Gotham-Medium;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.67;
+  margin: 30px 0 20px;
+}
+
+.document .content {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.document ul {
+  list-style: disc;
+  padding-left: 25px;
+  margin: 10px 0 20px;
+}
+.document ol{
+    margin: 10px 0 20px;
+}
+.document hr {
+  border-top: 1px solid #2c363f;
+  margin-top: 159px;
+}
+.bgcolor-60 {
+  background-color: #607d8b!important;
+}
 /*小于992px屏幕 xs+sm*/
 @media (max-width: 991px) {
     /*应用场景*/
@@ -723,11 +788,11 @@ footer .contact-icon+span {
         padding: 0 40px;
     }
     .exchange{
-      margin-top: 40px;
-      padding-top: 40px;
+        margin-top: 40px;
+        padding-top: 40px;
     }
     .exchange p{
-      margin-bottom: 25px;
+        margin-bottom: 25px;
     }
     /*订阅资讯*/
     .ico-subscribe{
@@ -835,6 +900,10 @@ footer .contact-icon+span {
     footer .row {
         padding-bottom: 80px;
     }
+    footer .contact-list .qq-code{
+        left: 0;
+        width: 150px;
+    }
     /*发展路线图*/
     .scroll-box>ul {
         padding: 40px 32px 0 42px;
@@ -914,6 +983,15 @@ footer .contact-icon+span {
     }
     .ico-paper h4{
         font-size: 16px;
+    }
+    .document .container {
+      padding-top: 10px;
+    }
+    .document .headline {
+      margin: 20px 0;
+    }
+    .document .subtitle {
+      margin: 20px 0 10px;
     }
 }
 /*小于等于360px屏幕*/
