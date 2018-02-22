@@ -14,10 +14,18 @@
 }
 html,body{
     overflow-x: hidden;
+    font-family: Gotham-Book;
+    color: #2c363f;
+}
+.wh100{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 a,a:hover,a:focus{
     color: #fff;
     text-decoration: none;
+    outline: none;
 }
 input{
     border: none;
@@ -25,12 +33,10 @@ input{
 input:focus {
     outline: none;
 }
-
 ul {
     padding: 0;
     list-style: none;
 }
-
 ::-webkit-scrollbar {
     width: 0px
 }
@@ -82,7 +88,6 @@ ul {
 .btn:focus {
     color: #fff;
 }
-
 .center-align {
     text-align: center!important;
 }
@@ -90,17 +95,31 @@ ul {
 .navbar-default {
     border: none;
 }
-
+.fixed-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background:#2c363f!important;
+  border-radius: 0!important;
+}
+.navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #fff;
 }
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    height: 48px;
+    line-height: 48px;
+    padding:0 0 0 15px;
+    font-size: 20px;
     color: #fff;
 }
-.ico-top {
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+.mds-top {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1)));
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
@@ -123,22 +142,17 @@ ul {
        -moz-animation: scale  200s linear infinite;
             animation: scale  200s linear infinite;
 }
-.ico-top>.container {
-    padding: 0;
-}
 
-.ico-nav {
-    font-family: Gotham-Book;
+.mds-nav {
     background-color: transparent;
+    min-height: 48px;
+    height: 48px;
+    z-index: 100;
 }
-.ico-nav .navbar-brand {
-    font-size: 20px;
-    line-height: 1.2;
-    height: auto;
-    color: #fff;
-}
-.dropdown,.ico-book {
-    padding: 15px;
+.dropdown,.mds-book {
+    padding-left: 15px;
+    height: 48px;
+    line-height: 48px;
 }
 .dropdown-menu {
     min-width: 0;
@@ -156,7 +170,7 @@ ul {
     margin-top: 96px;
     font-family: Gotham-Light;
 }
-.ico-top .slogan {
+.mds-top .slogan {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
@@ -186,19 +200,18 @@ ul {
     height: 60px;
 }
 /*订阅资讯*/
-.ico-subscribe{
+.mds-subscribe{
     padding:120px 0;
 }
-.ico-subscribe .ico-email{
+.mds-subscribe .mds-email{
     width: 64%;
     height: 48px;
     border-radius: 2px;
     background-color: #e1e6e9;
     margin-right: 4%;
     text-align: center;
-    font-family: Gotham-Book;
 }
-.ico-subscribe h4{
+.mds-subscribe h4{
     margin-bottom: 24px;
     font-size: 24px;
     font-weight: 300;
@@ -207,7 +220,7 @@ ul {
     font-family: Gotham-Light;
     font-weight: 300;
 }
-.ico-subscribe .btn{
+.mds-subscribe .btn{
     background-color: #607d8b;
     height: 48px;
     line-height: 48px;
@@ -216,15 +229,15 @@ ul {
     font-weight: 500;
     padding: 0;
 }
-.ico-subscribe .btn1{
+.mds-subscribe .btn1{
     width: 30%;
     text-align: center;
 }
-.ico-subscribe .btn2{
+.mds-subscribe .btn2{
     width: 100%;
     text-align: center;
 }
-.ico-subscribe .btn2 img{
+.mds-subscribe .btn2 img{
     margin-right: 5px;
 }
 .telegram{
@@ -235,44 +248,44 @@ ul {
     font-family: Gotham-Light;
 }
 /*什么是 MediShares*/
-.ico-des {
+.mds-des {
     padding: 120px 0 160px;
-    font-family: Gotham-Book;
+
     color: #2c363f;
     line-height: 1.5;
 }
-.ico-des-title {
+.mds-des-title {
     font-size: 29px;
     font-weight: 300;
     color: #2c363f;
     line-height: 1.5;
     font-family: Gotham-Light;
 }
-.ico-des ul {
+.mds-des ul {
     margin-top: 80px;
 }
-.ico-des-list {
+.mds-des-list {
     font-size: 14px;
     font-weight: normal;
     line-height: 1.43;
 }
-.ico-des-dot {
+.mds-des-dot {
     float: left;
     margin-right: 15px;
 }
-.ico-des-dot+div {
+.mds-des-dot+div {
     overflow: hidden;
 }
  /*MediShares 的优势*/
-.ico-superiority ul {
+.mds-superiority ul {
     margin-top: 20px;
 }
-.ico-superiority li {
+.mds-superiority li {
     padding: 100px 50px 0;
-    font-family: Gotham-Book;
+
     color: #2c363f;
 }
-.ico-sup-icon {
+.mds-sup-icon {
     float: left;
     width: 32px;
     height: 32px;
@@ -282,24 +295,24 @@ ul {
     border-radius: 50%;
     overflow: hidden;
 }
-.ico-sup-icon>img {
+.mds-sup-icon>img {
     width: 100%;
 }
-.ico-sup-icon+div {
+.mds-sup-icon+div {
     overflow: hidden;
 }
 /*应用场景*/
-.ico-application {
+.mds-application {
     background-color: #607d8b;
 }
-.ico-application .ico-des-title {
+.mds-application .mds-des-title {
     color: #fff;
 }
-.ico-apl-list>li {
+.mds-apl-list>li {
     padding: 0 16px;
     margin-top: 20px;
 }
-.ico-apl-list>li>.ico-apl-detail {
+.mds-apl-list>li>.mds-apl-detail {
     background-color: #fff;
     background-repeat: no-repeat;
     -moz-background-size: 344px;
@@ -310,57 +323,57 @@ ul {
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
-.ico-apl-list>li:nth-of-type(1)>.ico-apl-detail {
+.mds-apl-list>li:nth-of-type(1)>.mds-apl-detail {
     background-image: url(../images/icon/scenario_icon_1@2x.png);
 }
-.ico-apl-list>li:nth-of-type(2)>.ico-apl-detail {
+.mds-apl-list>li:nth-of-type(2)>.mds-apl-detail {
     background-image: url(../images/icon/scenario_icon_2@2x.png);
 }
-.ico-apl-list>li:nth-of-type(3)>.ico-apl-detail {
+.mds-apl-list>li:nth-of-type(3)>.mds-apl-detail {
     background-image: url(../images/icon/scenario_icon_3@2x.png);
 }
-.ico-apl-list>li:nth-of-type(4)>.ico-apl-detail {
+.mds-apl-list>li:nth-of-type(4)>.mds-apl-detail {
     background-image: url(../images/icon/scenario_icon_4@2x.png);
 }
-.ico-apl-list>li:nth-of-type(5)>.ico-apl-detail {
+.mds-apl-list>li:nth-of-type(5)>.mds-apl-detail {
     background-image: url(../images/icon/scenario_icon_5@2x.png);
 }
-.ico-apl-list>li:nth-of-type(6)>.ico-apl-detail {
+.mds-apl-list>li:nth-of-type(6)>.mds-apl-detail {
     background-image: url(../images/icon/scenario_icon_6@2x.png);
 }
-.ico-apl-detail>.ico-apl-title {
+.mds-apl-detail>.mds-apl-title {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: #2c363f;
     font-family: Gotham-Medium;
 }
-.ico-apl-info {
+.mds-apl-info {
     margin-top: 9px;
     font-size: 12px;
     line-height: 1.5;
     color: #607d8b;
-    font-family: Gotham-Book;
+
 }
 /*视频*/
-.ico-video .video-title{
+.mds-video .video-title{
     margin: 40px 0 80px;
-    font-family: Gotham-Book;
+
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color:#2c363f;
 }
-.ico-video .video-iframe{
+.mds-video .video-iframe{
     width: 100%;
     height: 42vw;
 }
 /*保障合约市场*/
-.ico-market-list {
+.mds-market-list {
     position: relative;
     padding-right: 60px;
 }
-.ico-market-list:before {
+.mds-market-list:before {
     position: absolute;
     top: -40px;
     left: 0;
@@ -371,16 +384,16 @@ ul {
     color: #f2f5f6;
     z-index: -1;
 }
-.ico-market-list.list1:before {
+.mds-market-list.list1:before {
     content: '1';
 }
-.ico-market-list.list2:before {
+.mds-market-list.list2:before {
     content: '2';
 }
-.ico-market-list.list3:before {
+.mds-market-list.list3:before {
     content: '3';
 }
-.ico-market-title {
+.mds-market-title {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.43;
@@ -388,19 +401,19 @@ ul {
     font-family: Gotham-Medium;
 }
 /*APP*/
-.ico-app{
+.mds-app{
     background: #e1e6e9;
     padding-top: 120px;
 }
 /*团队*/
-.ico-team-list{
+.mds-team-list{
     padding: 20px 12px;
     width: 196px;
     display: inline-block;
     float: none;
     vertical-align: top;
 }
-.ico-team-img {
+.mds-team-img {
     width: 120px;
     height: 120px;
     -moz-border-radius: 50%;
@@ -408,10 +421,10 @@ ul {
     overflow: hidden;
     margin: 0 auto;
 }
-.ico-team-img>img {
+.mds-team-img>img {
     width: 100%;
 }
-.ico-team-name {
+.mds-team-name {
     margin-top: 32px;
     font-size: 20px;
     font-weight: 500;
@@ -419,51 +432,51 @@ ul {
     color: #607d8b;
     font-family: Gotham-Medium;
 }
-.ico-team-info {
+.mds-team-info {
     margin-top: 8px;
     font-size: 12px;
     line-height: 1.5;
     color: #a9b9c1;
-    font-family: Gotham-Book;
+
 }
 /*顾问*/
-.ico-counselor>.container {
+.mds-counselor>.container {
     border-top: 1px solid #e1e6e9;
     padding: 160px 15px;
 }
 /*合作伙伴*/
-.ico-partner-list {
+.mds-partner-list {
     height: 64px;
     margin-top: 40px;
 }
-.ico-partner-list>a {
+.mds-partner-list>a {
     display: inline-block;
     height: 100%;
 }
-.ico-partner-list img {
+.mds-partner-list img {
     width: auto;
     height: 100%;
 }
 /*白皮书*/
-.ico-paper img{
+.mds-paper img{
     margin: 120px 0 30px;
 
 }
-.ico-paper h4{
+.mds-paper h4{
     font-size: 24px;
     font-weight: 500;
     line-height: 1.33;
     color: #607d8b;
     font-family: Gotham-Medium;
 }
-.ico-paper p{
+.mds-paper p{
     font-size: 14px;
     font-weight: 300;
     line-height: 1.43;
     color: #607d8b;
-    font-family: Gotham-Book;
+
 }
-.ico-paper .download{
+.mds-paper .download{
     display: inline-block;
     width: 160px;
     height: 48px;
@@ -477,7 +490,7 @@ ul {
     font-family: Gotham-Medium;
 }
 /*发展路线图*/
-.ico-develop {
+.mds-develop {
     background-color: #e1e6e9;
     overflow: hidden;
     position: relative;
@@ -491,7 +504,7 @@ ul {
     color: #a9b9c1;
 }
 .develop-box .dev-des {
-    font-family: Gotham-Book;
+
     font-size: 14px;
     line-height: 1.43;
     color: #607d8b;
@@ -553,78 +566,22 @@ ul {
     text-size-adjust: none;
 }
 /*媒体报道*/
-.carousel{
-    margin-top: 80px;
+.mds-report ul{
+    list-style:disc;
+    padding-left: 22px;
+    margin-top: 32px;
 }
-.carousel-inner ul li{
-    float: left;
-    width: 30%;
-    background: #fff;
-}
-.carousel-inner ul li a{
+.mds-report li a{
+    padding-left: 10px;
     display: block;
-}
-.carousel-inner ul li:nth-child(2){
-    margin: 0 5%;
-}
-.carousel-inner .carousel-text{
-    padding: 24px 32px 0;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
     color: #2c363f;
-    overflow:hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    min-height: 60px;
 }
-.carousel-inner .media{
-    padding: 0 32px 24px;
-   font-family: Gotham;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #a9b9c1;
+.mds-report a:hover,.mds-report a:focus{
+    color: #2c363f;
 }
-.carousel-control{
-    width: 40px;
-}
-.carousel-control.prev{
-    left: -16px;
-}
-.carousel-control.next{
-    left: auto;
-    right: -16px;
-}
-.carousel-control img{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-}
-#carousel2 .item>a{
-    background: #fff;
-    display: block;
-
-}
-.view-more{
-    margin-top: 60px;
-    text-align: center;
-    display: block;
-}
-.view-more>span{
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 2px;
-    background:#607d8b;
-    display: inline-block;
-    font-size: 12px;
-    font-family: Gotham-Medium;
-    font-weight: 500;
+.mds-report h3{
+    color:#202020;
+    font-weight: 400;
 }
 /*页脚*/
 footer {
@@ -693,7 +650,7 @@ footer .contact-icon+span {
     white-space: nowrap;
 }
 .copyright {
-    font-family: Gotham-Book;
+
     font-size: 14px;
     line-height: 1.43;
     color: #607d8b;
@@ -750,15 +707,8 @@ footer .contact-icon+span {
 /*小于992px屏幕 xs+sm*/
 @media (max-width: 991px) {
     /*应用场景*/
-    .ico-apl-list-en>li>.ico-apl-detail {
+    .mds-apl-list-en>li>.mds-apl-detail {
         height: 360px;
-    }
-    /*媒体报道*/
-    .carousel{
-        margin-top: 40px;
-    }
-    .carousel-inner .item{
-        padding: 0 24px;
     }
 }
 /*小于768px屏幕 手机 xs*/
@@ -775,15 +725,54 @@ footer .contact-icon+span {
         margin-top: 40px!important;
     }
     /*头部*/
-    .ico-nav .container{
+    .fixed-top{
+        padding:0 15px;
+    }
+    .mds-top .container {
+      padding: 0;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #fff;
+    }
+    .navbar-default .navbar-toggle{
+        border: none;
+    }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+        background: transparent;
+    }
+    #mds-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%!important;
+        background: #fff;
+        margin:0;
         padding: 0;
+    }
+    #mds-nav>.nav a{
+        color: #2c363f;
+        padding: 0;
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+    }
+    .collapse-close{
+        font-size: 28px;
+        padding: 14px 20px;
+        color: #607d8b;
+        text-align: right;
+    }
+    #mds-nav .nav{
+        margin-top: 60px;
     }
     .invalid-name {
         font-size: 24px;
         margin-top: 80px;
         line-height: 1.33;
     }
-    .ico-top .slogan {
+    .mds-top .slogan {
         font-size: 14px;
         padding: 0 40px;
     }
@@ -795,7 +784,7 @@ footer .contact-icon+span {
         margin-bottom: 25px;
     }
     /*订阅资讯*/
-    .ico-subscribe{
+    .mds-subscribe{
         padding: 40px 0 60px;
     }
     .telegram{
@@ -804,7 +793,7 @@ footer .contact-icon+span {
         border-left:none;
         width: 90%;
     }
-    .ico-subscribe h4{
+    .mds-subscribe h4{
         margin-bottom: 12px;
         text-align: center;
     }
@@ -813,66 +802,66 @@ footer .contact-icon+span {
         padding-top: 16px;
     }
     /*什么是 MediShares*/
-    .ico-des {
+    .mds-des {
         padding: 60px 0 80px;
     }
-    .ico-des li {
+    .mds-des li {
         margin-top: 40px;
         padding: 0;
     }
-    .ico-des>.container,.ico-superiority>.container,.ico-market>.container,.ico-team>.container{
+    .mds-des>.container,.mds-superiority>.container,.mds-market>.container,.mds-team>.container,.mds-report>.container{
         padding: 0 32px;
     }
-    .ico-des>.container>ul,.ico-superiority>.container>ul,.ico-market>.container>ul{
+    .mds-des>.container>ul,.mds-superiority>.container>ul,.mds-market>.container>ul{
         margin: 0;
     }
     /*优势*/
-    .ico-superiority li {
+    .mds-superiority li {
         padding: 40px 0 0;
     }
     /*应用场景*/
-    .ico-apl-list>li {
+    .mds-apl-list>li {
         margin-top: 8px;
     }
-    .ico-apl-list-en>li>.ico-apl-detail {
+    .mds-apl-list-en>li>.mds-apl-detail {
         height: auto;
     }
     /*视频*/
-    .ico-video .video-title{
+    .mds-video .video-title{
         margin: 20px 0 40px;
     }
     /*保障合约市场*/
-    .ico-market-list:before {
+    .mds-market-list:before {
         display: none;
     }
-    .ico-market-list {
+    .mds-market-list {
         margin-top: 40px;
         padding: 0 ;
     }
     /*APP*/
-    .ico-app{
+    .mds-app{
         padding-top: 60px;
     }
     /*团队*/
-    .ico-team-list{
+    .mds-team-list{
         padding: 20px 15px;
         width: 50%;
         float: left;
         min-height: 345px;
     }
-    .ico-team-img {
+    .mds-team-img {
         width: 96px;
         height: 96px;
     }
     /*顾问*/
-    .ico-counselor>.container {
+    .mds-counselor>.container {
         padding: 60px 0;
         margin: 0 32px;
     }
-    .ico-team-name {
+    .mds-team-name {
         margin-top: 24px;
     }
-    .ico-counselor .ico-team-list {
+    .mds-counselor .mds-team-list {
         min-height: 255px;
     }
     /*页脚*/
@@ -908,7 +897,7 @@ footer .contact-icon+span {
     .scroll-box>ul {
         padding: 40px 32px 0 42px;
     }
-    .ico-develop{
+    .mds-develop{
         height: auto;
     }
     #wrapper {
@@ -921,16 +910,16 @@ footer .contact-icon+span {
     #scroller {
         position: relative;
     }
-    .ico-develop-list {
+    .mds-develop-list {
         padding: 0 0 40px 32px;
         position: relative;
         border-left: 4px solid #c8d2d7;
     }
-    .ico-develop-list:last-of-type {
+    .mds-develop-list:last-of-type {
         border: none;
         padding-bottom: 0;
     }
-    .ico-develop-list:before {
+    .mds-develop-list:before {
         content: '';
         position: absolute;
         top: 0;
@@ -948,40 +937,33 @@ footer .contact-icon+span {
         -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     }
-    .ico-develop-list:last-of-type:before {
+    .mds-develop-list:last-of-type:before {
         left: -10px;
     }
     .iScrollHorizontalScrollbar{
         display: none;
     }
     /*白皮书*/
-    .ico-paper img{
+    .mds-paper img{
         margin-top: 40px;
     }
-    /*媒体报道*/
-    .carousel-inner .carousel-text{
-        padding: 12px 12px 0;
-    }
-    .carousel-inner .media{
-        padding:  0 12px 12px;
-    }
-    .ico-subscribe .ico-email{
+    .mds-subscribe .mds-email{
         width: 100%;
         margin: 0;
     }
-    .ico-subscribe .btn1{
+    .mds-subscribe .btn1{
         width: 50%;
         margin: 10px auto;
         display: block;
     }
-    .ico-paper .download{
+    .mds-paper .download{
         width: 100%;
         height: 40px;
         line-height: 40px;
         font-size: 12px;
         margin-top: 20px;
     }
-    .ico-paper h4{
+    .mds-paper h4{
         font-size: 16px;
     }
     .document .container {
@@ -1005,7 +987,7 @@ footer .contact-icon+span {
 }
 /*大于等于768px屏幕 包含平板 sm+md+lg*/
 @media (min-width: 768px) {
-    .ico-partner-list {
+    .mds-partner-list {
     width: auto;
     padding: 0;
     margin: 40px 24px 0;
@@ -1017,19 +999,19 @@ footer .contact-icon+span {
         border-top: 4px solid #c8d2d7;
         padding-left: 132px;
     }
-    .ico-develop-list {
+    .mds-develop-list {
         width: 263px;
         position: relative;
         border-left: 1px solid #c8d2d7;
         min-height: 160px;
     }
-    .ico-develop-list:nth-of-type(2n+1) {
+    .mds-develop-list:nth-of-type(2n+1) {
         -webkit-transform: translateY(-160px);
         -moz-transform: translateY(-160px);
         -ms-transform: translateY(-160px);
         transform: translateY(-160px);
     }
-    .ico-develop-list:before {
+    .mds-develop-list:before {
         content: '';
         position: absolute;
         top: -14px;
@@ -1047,7 +1029,7 @@ footer .contact-icon+span {
         -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     }
-    .ico-develop-list:nth-of-type(2n+1):before {
+    .mds-develop-list:nth-of-type(2n+1):before {
         top: auto;
         bottom: -14px;
     }
@@ -1056,16 +1038,11 @@ footer .contact-icon+span {
         padding-left: 16px;
         bottom: 0;
     }
-    .ico-develop-list:nth-of-type(2n+1) .develop-box {
+    .mds-develop-list:nth-of-type(2n+1) .develop-box {
         top: 0;
         bottom: auto;
     }
 }
-/*@media (min-width: 1200px) {
-    .container {
-        width: 1080px;
-    }
-}*/
 @media (min-width: 1450px) {
     .iScrollHorizontalScrollbar{
         display: none;
@@ -1073,7 +1050,7 @@ footer .contact-icon+span {
     #scroller,.scroll-box,.scroll-box>ul{
         width: 100%;
     }
-    .ico-develop-list{
+    .mds-develop-list{
         width: 20%;
     }
 }
