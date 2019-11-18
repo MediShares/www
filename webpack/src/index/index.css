@@ -1,0 +1,127 @@
+/* header */
+
+.mds-top {
+  padding-bottom: 144px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.mds-top:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../../static/img/bg/header_image.jpg) no-repeat center top/cover;
+  animation: scale 200s linear infinite;
+  z-index: 1;
+}
+
+.mds-top img {
+  margin-top: 96px;
+}
+
+.mds-top .content {
+  position: relative;
+  z-index: 10;
+}
+
+.mds-top .slogan {
+  font: 500 32px/48px Gotham-Medium;
+  margin-top: 80px;
+}
+
+
+/*项目*/
+
+.projects-list {
+  overflow: hidden;
+  max-width: 824px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.projects-list li {
+  padding: 0;
+  background: #fff;
+  margin: 32px 0;
+}
+
+.projects-list .content {
+  overflow: hidden;
+  padding: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  word-break: break-word;
+}
+
+.part-title {
+  font: 500 24px/32px Gotham-Medium;
+  margin-bottom: 16px;
+}
+
+.projects-list li .image {
+  width: 312px;
+  float: right;
+}
+
+.platform {
+  color: var(--blueGrey);
+  margin-top: 16px;
+}
+
+.projects-list a {
+  color: var(--blueColor);
+  display: block;
+  margin-top: 16px;
+}
+
+
+/*小于768px屏幕 手机 xs*/
+
+@media (max-width: 767px) {
+  .container {
+    max-width: unset;
+  }
+  /*项目*/
+  .projects-list {
+    padding: 0;
+  }
+  .projects-list li .content {
+    padding: 0 24px 32px;
+    position: relative;
+  }
+  .projects-list li .image {
+    float: none;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width:1300px) {
+  .container {
+    max-width: 1248px;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(2) translate(20%, 20%);
+  }
+  50% {
+    transform: scale(1) translate(0, 0);
+  }
+  75% {
+    transform: scale(2) translate(-20%, -20%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}

@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg com-nav">
+  <div class="container">
+    <a class="navbar-brand" href="<%=resolve==''?'./': resolve+'../'+htmlWebpackPlugin.options.lang%>">MDS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse justify-content-end" id="toggleNav">
+      <div class="collapse-close d-lg-none" data-toggle="collapse" data-target="#toggleNav">×</div>
+      <ul class="navbar-nav">
+        <li class="d-lg-none">
+          <a href="<%=resolve==''?'./': resolve%>">
+            <%=htmlWebpackPlugin.options.i18n.home%>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://mds.city/#/about">
+            <%=htmlWebpackPlugin.options.i18n.about%>
+          </a>
+        </li>
+        <li>
+          <a href="<%=htmlWebpackPlugin.options.i18n.news_link%>" target="_blank">
+            <%=htmlWebpackPlugin.options.i18n.news%>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://mds.city/#/crossChain" target="_blank">
+            <%=htmlWebpackPlugin.options.i18n.cross_chain_exchange%>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="javascript:;" class="dropdown-toggle" id="lang" data-toggle="dropdown">
+            <%=htmlWebpackPlugin.options.i18n.lang%>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="lang">
+            <a class="dropdown-item" href="<%=resolve%>../<%=path==''?'':path+'/'%>cn/">简体中文</a>
+            <a class="dropdown-item" href="<%=resolve%>../<%=path==''?'':path+'/'%>en/">English</a>
+            <a class="dropdown-item" href="<%=resolve%>../<%=path==''?'':path+'/'%>ko/">한국어</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</nav>
