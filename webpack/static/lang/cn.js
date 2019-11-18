@@ -1,8 +1,8 @@
 module.exports = {
   lang: "简体中文",
-  description: "麦子钱包官网，数字资产钱包，支持BTC, ETH, EOS, TRON, NEO, ONT, EOSForce, NAS, BOS, Telos, ENU, ESN ,BinanceChain,Cosmos/IRISnet 等18个公链生态钱包",
-  keywords: "麦子钱包,token,erc20钱包,eos钱包,NEO钱包,以太坊钱包",
-  title: "麦子钱包官网 - 您的区块链应用入口",
+  description: "MediShares是全球区块链相互保障合约市场。它将传统的共同保险模型与区块链和智能合约相结合，可提供较低的运营成本并保证风险补偿。",
+  keywords: "medishares,mds,blockchain,insurance blockchain,eth wallet",
+  title: "MediShares 官网 - 全球区块链相互保障合约市场",
   home: "首页",
   about: "关于",
   news: "进度报告",
@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       icon: "2.jpg",
-      title: "社区自治的互助系统",
+      title: "<span style='vertical-align:middle'>社区自治的互助系统</span><img src='../static/img/icon/test.jpg' height='20' style='margin-left:10px'/>",
       platform: "EOS",
       slogan: "帮助他人、保护自己",
       link: "http://mutualdao.org",

@@ -1,8 +1,8 @@
 module.exports = {
   lang: "한국어",
-  description: "밀 지갑은 EOS, TRX, BTC, ETH, BinanceChain, Cosmos / IRISnet과 같은 18 개의 공개 체인 생태계를 지원하는 다중 플랫폼 교차 체인 지갑입니다.",
-  keywords: "Math Wallet, token,erc20 지갑,eos지갑,NEO지갑,ETH 지갑",
-  title: "Math Wallet 공식 홈페이지 - 당신의 블록체인 애플리케이션 입구",
+  description: "MediShares is a global mutual insurance marketplace on the blockchain. It combine the traditional mutual insurance model with blockchain and smart contract which provide a low operation cost and guarantee of compensation for risks.",
+  keywords: "medishares,mds,blockchain,insurance blockchain,eth wallet",
+  title: "MediShares - A Global Mutual Aid Marketplace on the Blockchain",
   home: "홈페이지",
   about: "About",
   news: "News",
@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       icon: "2.jpg",
-      title: "Mutual Aid DAO",
+      title: "<span style='vertical-align:middle'>Mutual Aid DAO</span><img src='../static/img/icon/test.jpg' height='20' style='margin-left:10px'/>",
       platform: "EOS",
       slogan: "Help Others, Protect Self",
       link: "http://mutualdao.org",
