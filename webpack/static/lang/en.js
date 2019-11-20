@@ -1,8 +1,8 @@
 module.exports = {
   lang: 'English',
-  description: "Math Wallet is a multi-platform cross-chain wallet that supports 18 public chain ecosystems such as EOS, TRX, BTC, ETH, BinanceChain, Cosmos / IRISnet.",
-  keywords: "Math Wallet,medishares,mds token,imtoken,eostoken,bitpie,erc20 wallet,NEO wallet,Ethereum Wallet,eos wallet",
-  title: "Math Wallet, Your Gate to the World of Blockchain",
+  description: "MediShares is a global mutual insurance marketplace on the blockchain. It combine the traditional mutual insurance model with blockchain and smart contract which provide a low operation cost and guarantee of compensation for risks.",
+  keywords: "medishares,mds,blockchain,insurance blockchain,eth wallet",
+  title: "MediShares - A Global Mutual Aid Marketplace on the Blockchain",
   home: "Home",
   about: "About",
   news: "News",
@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       icon: "2.jpg",
-      title: "Mutual Aid DAO",
+      title: "<span style='vertical-align:middle'>Mutual Aid DAO</span><img src='../static/img/icon/test.jpg' height='20' style='margin-left:10px'/>",
       platform: "EOS",
       slogan: "Help Others, Protect Self",
       link: "http://mutualdao.org",
