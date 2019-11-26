@@ -9,15 +9,15 @@
   <title>
     <%=htmlWebpackPlugin.options.i18n.title %>
   </title>
-  <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="<%=htmlWebpackPlugin.options.path%>static/img/favicon.ico" />
 </head>
 
 <body>
   <div class="mds-top">
     <!--nav-->
-    <%= require('../tpl/nav.ejs')({resolve:'',path:'',htmlWebpackPlugin}) %>
+    <%= require('../tpl/nav.ejs')({htmlWebpackPlugin}) %>
       <div class="container content">
-        <img src="../static/img/icon/header_logo@2x.png" width="182">
+        <img src="<%=htmlWebpackPlugin.options.path%>static/img/icon/header_logo@2x.png" width="182">
         <h2 class="slogan">
           <%=htmlWebpackPlugin.options.i18n.slogan%>
         </h2>
@@ -28,7 +28,7 @@
     <ul class="projects-list">
       <% htmlWebpackPlugin.options.i18n.projectList.forEach(function(item,index){%>
         <li class="clearfix">
-          <img class="image" src="../static/img/project/<%=item.icon%>">
+          <img class="image" src="<%=htmlWebpackPlugin.options.path%>static/img/project/<%=item.icon%>">
           <div class="content">
             <h1 class="part-title">
               <%=item.title%>
@@ -41,7 +41,7 @@
                 <%=item.platform%>
             </p>
             <a href="<%=item.link%>" target="_blank">
-              <%=htmlWebpackPlugin.options.i18n.open%> <img src="../static/img/icon/arr.png" width="12"></a>
+              <%=htmlWebpackPlugin.options.i18n.open%> <img src="<%=htmlWebpackPlugin.options.path%>static/img/icon/arr.png" width="12"></a>
           </div>
         </li>
         <% }) %>
