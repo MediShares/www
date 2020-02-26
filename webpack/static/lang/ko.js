@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       icon: "2.jpg",
-      title: "<span style='vertical-align:middle'>커뮤니티 자치의 공조 시스템 </span><img src='../static/img/icon/test.jpg' height='20' style='margin-left:10px'/>",
+      title: "커뮤니티 자치의 공조 시스템",
       platform: "EOS",
       slogan: "남을 돕고 자신을 보호하라",
       link: "http://mutualdao.org",
