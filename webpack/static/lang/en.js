@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       icon: "2.jpg",
-      title: "<span style='vertical-align:middle'>Mutual Aid DAO</span><img src='../static/img/icon/test.jpg' height='20' style='margin-left:10px'/>",
+      title: "Mutual Aid DAO",
       platform: "EOS",
       slogan: "Help Others, Protect Self",
       link: "http://mutualdao.org",

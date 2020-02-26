@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       icon: "2.jpg",
-      title: "<span style='vertical-align:middle'>社区自治的互助系统</span><img src='../static/img/icon/test.jpg' height='20' style='margin-left:10px'/>",
+      title: "社区自治的互助系统",
       platform: "EOS",
       slogan: "帮助他人、保护自己",
       link: "http://mutualdao.org",
