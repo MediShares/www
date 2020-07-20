@@ -13,6 +13,12 @@ module.exports = {
   slogan: "Build Mutual Trust World on Blockchain!",
   platform: "Platform",
   projectList: [{
+      icon: "7.jpg",
+      title: "DeFi Protect Contract",
+      platform: "ETH",
+      slogan: "Max Claim 100,000 MDS",
+      link: "https://m.medishares.net/product/view/id/2",
+    }, {
       icon: "1.jpg",
       title: "MDS CITY",
       platform: "EOS",

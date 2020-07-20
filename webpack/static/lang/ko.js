@@ -13,6 +13,12 @@ module.exports = {
   slogan: "블록체인에 상호 신뢰의 세계를 세우기！",
   platform: "플랫폼",
   projectList: [{
+      icon: "7.jpg",
+      title: "DeFi Protect Contract",
+      platform: "ETH",
+      slogan: "Max Claim 100,000 MDS",
+      link: "https://m.medishares.net/product/view/id/2",
+    }, {
       icon: "1.jpg",
       title: "MDS CITY",
       platform: "EOS",

@@ -13,6 +13,12 @@ module.exports = {
   slogan: "在区块链上建立互信世界！",
   platform: "平台",
   projectList: [{
+      icon: "7.jpg",
+      title: "DeFi合约安全保障",
+      platform: "ETH",
+      slogan: "最高可获 100,000 MDS 保障金",
+      link: "https://m.medishares.net/product/view/id/2",
+    }, {
       icon: "1.jpg",
       title: "MDS CITY",
       platform: "EOS",
