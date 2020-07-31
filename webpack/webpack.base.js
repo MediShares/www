@@ -33,7 +33,7 @@ const setMPA = () => {
     Object.keys(i18n).map(lang => {
       HtmlWebpackPlugins.push(
         new HtmlWebpackPlugin({
-          filename: baseConf.distPath + (lang == 'en' ? '' : (lang + '/')) + pageName + '.html',
+          filename: baseConf.distPath + lang + '/' + pageName + '.html',
           template: path.join(__dirname, `src/${pageName}/index.html`),
           chunks: [pageName],
           inject: true,
@@ -46,7 +46,7 @@ const setMPA = () => {
           chunksSortMode: 'dependency',
           i18n: i18n[lang],
           lang: lang,
-          path: lang == 'en' ? '/' : '../'
+          path: '/'
         })
       )
     })

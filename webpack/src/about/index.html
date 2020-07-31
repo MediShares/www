@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="<%= htmlWebpackPlugin.options.i18n.keywords%>">
+  <meta name="description" content="<%= htmlWebpackPlugin.options.i18n.description%>">
+  <title>
+    <%=htmlWebpackPlugin.options.i18n.title %>
+  </title>
+  <link rel="shortcut icon" type="image/x-icon" href="<%=htmlWebpackPlugin.options.path%><%=htmlWebpackPlugin.options.path%>static/img/favicon.ico" />
+</head>
+
+<body>
+  <!--nav-->
+  <%= require('../tpl/nav.ejs')({htmlWebpackPlugin,path:'about.html'}) %>
+
+    <div class="about">
+      <!-- 什么是 MediShares -->
+      <div class="mds-des bgfff">
+        <div class="container">
+          <div class="mds-title">
+            <%=htmlWebpackPlugin.options.i18n.mediShares_des%>
+          </div>
+          <ul class="row">
+            <li class="col-sm-4">
+              <span class="mds-des-dot">•</span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_des1%>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <span class="mds-des-dot">•</span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_des2%>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <span class="mds-des-dot">•</span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_des3%>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MediShares 的优势 -->
+      <div class="mds-superiority pd-160">
+        <div class="container">
+          <div class="mds-title">
+            <%=htmlWebpackPlugin.options.i18n.mediShares_adv%>
+          </div>
+          <ul class="row">
+            <li class="col-sm-4">
+              <span class="mds-sup-icon">
+            <img src="<%=htmlWebpackPlugin.options.path%>static/img/advantage/advantage_icon_1@2x.png" />
+          </span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_adv1%>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <span class="mds-sup-icon">
+            <img src="<%=htmlWebpackPlugin.options.path%>static/img/advantage/advantage_icon_2@2x.png" />
+          </span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_adv2%>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <span class="mds-sup-icon">
+            <img src="<%=htmlWebpackPlugin.options.path%>static/img/advantage/advantage_icon_3@2x.png" />
+          </span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_adv3%>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <span class="mds-sup-icon">
+            <img src="<%=htmlWebpackPlugin.options.path%>static/img/advantage/advantage_icon_4@2x.png" />
+          </span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_adv4%>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <span class="mds-sup-icon">
+            <img src="<%=htmlWebpackPlugin.options.path%>static/img/advantage/advantage_icon_5@2x.png" />
+          </span>
+              <div>
+                <%=htmlWebpackPlugin.options.i18n.mediShares_adv5%>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 应用场景 -->
+      <div class="mds-application pd-160">
+        <div class="container">
+          <div class="mds-title">
+            <%=htmlWebpackPlugin.options.i18n.mediShares_apl%>
+          </div>
+          <ul class="row mds-apl-list mt-100">
+            <li class="col-sm-4">
+              <div class="mds-apl-detail">
+                <div class="mds-apl-title">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_title1%>
+                </div>
+                <div class="mds-apl-info">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_info1%>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <div class="mds-apl-detail">
+                <div class="mds-apl-title">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_title2%>
+                </div>
+                <div class="mds-apl-info">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_info2%>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <div class="mds-apl-detail">
+                <div class="mds-apl-title">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_title3%>
+                </div>
+                <div class="mds-apl-info">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_info3%>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <div class="mds-apl-detail">
+                <div class="mds-apl-title">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_title4%>
+                </div>
+                <div class="mds-apl-info">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_info4%>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <div class="mds-apl-detail">
+                <div class="mds-apl-title">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_title5%>
+                </div>
+                <div class="mds-apl-info">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_info5%>
+                </div>
+              </div>
+            </li>
+            <li class="col-sm-4">
+              <div class="mds-apl-detail">
+                <div class="mds-apl-title">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_title6%>
+                </div>
+                <div class="mds-apl-info">
+                  <%=htmlWebpackPlugin.options.i18n.mediShares_apl_info6%>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 保障合约市场 -->
+      <div class="mds-market bgfff pd-160">
+        <div class="container">
+          <div class="mds-title">
+            <%=htmlWebpackPlugin.options.i18n.mediShares_market%>
+          </div>
+          <ul class="row mt-120">
+            <li class="col-sm-4 mds-market-list list1">
+              <div class="mds-market-title">
+                <%=htmlWebpackPlugin.options.i18n.mediShares_market_title1%>
+              </div>
+              <ul class="mds-apl-info">
+                <li>
+                  <span class="mds-des-dot">•</span>
+                  <div>
+                    <%=htmlWebpackPlugin.options.i18n.mediShares_market_info1%>
+                  </div>
+                </li>
+                <li>
+                  <span class="mds-des-dot">•</span>
+                  <div>
+                    <%=htmlWebpackPlugin.options.i18n.mediShares_market_info2%>
+                  </div>
+                </li>
+                <li>
+                  <span class="mds-des-dot">•</span>
+                  <div>
+                    <%=htmlWebpackPlugin.options.i18n.mediShares_market_info3%>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="col-sm-4 mds-market-list list2">
+              <div class="mds-market-title">
+                <%=htmlWebpackPlugin.options.i18n.mediShares_market_title2%>
+              </div>
+            </li>
+            <li class="col-sm-4 mds-market-list list3">
+              <div class="mds-market-title">
+                <%=htmlWebpackPlugin.options.i18n.mediShares_market_title3%>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 合作伙伴 -->
+      <div class="mds-partner pd-160 center-align">
+        <div class="container">
+          <div class="mds-title">
+            <%=htmlWebpackPlugin.options.i18n.partners%>
+          </div>
+          <ul class="mt-40">
+            <li class="mds-partner-list">
+              <a href="https://infocorp.io/" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_7_logo@2x.png" />
+            </a>
+            </li>
+            <li class="mds-partner-list">
+              <a href="http://fenbushi.vc/" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_3_logo@2x.png" />
+            </a>
+            </li>
+            <li class="mds-partner-list">
+              <a href="https://delphy.org/" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_6_logo@2x.png" />
+            </a>
+            </li>
+            <li class="mds-partner-list">
+              <a href="http://scry.info" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_5_logo@2x.png" />
+            </a>
+            </li>
+            <li class="mds-partner-list">
+              <a href="https://genaro.network/en/" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_8_logo@2x.png" />
+            </a>
+            </li>
+            <li class="mds-partner-list">
+              <a href="https://www.irisnet.org/" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_9_logo@2x.png" />
+            </a>
+            </li>
+            <li class="mds-partner-list">
+              <a href="http://www.zhongtuobang.com/" target="_blank">
+              <img src="<%=htmlWebpackPlugin.options.path%>static/img/partner/partner_4_logo@2x.png" />
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <foot></foot>
+    </div>
+    <!-- 底部 -->
+    <%= require('../tpl/foot.ejs')({htmlWebpackPlugin}) %>
+</body>
+
+</html>
