@@ -130,5 +130,5 @@ module.exports = {
   mediShares_market_info3: "  Risk reserve capital will invest in blockchain industry, and 50% of the total profit of the risk reserve capital will be used to buy back MDS.",
   mediShares_market_title2: "The value of Mutual DAO System community is to have more users to join the mutual aid contract scheme instead of holding the tokens.",
   mediShares_market_title3: "Mutual DAO System will allocate X% of the total profit of the risk reserve capital to buy back MDS for reward to the policyholders on annual basis.",
-  partners: "Partners",
+  partners: "Investors",
 }

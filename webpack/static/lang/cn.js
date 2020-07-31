@@ -128,5 +128,5 @@ module.exports = {
   mediShares_market_info3: "能通过 Oracle 或者 DAO 判定赔付结果",
   mediShares_market_title2: "合约发起方将获得一部分 MDS 手续费作为奖励",
   mediShares_market_title3: "创建保障合约除了需要支付以太坊 Gas 外，还需要抵押一部分 MDS",
-  partners: "合作伙伴",
+  partners: "投资机构",
 }
