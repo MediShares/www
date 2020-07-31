@@ -128,5 +128,5 @@ module.exports = {
   mediShares_market_info3: "리스크 대비 자본은 블록체인 산업에 투자되며, 리스크 대비 자본으로 창출된 총 이익의 50%는 MDS를 다시 구매하는 데 사용됩니다.",
   mediShares_market_title2: "Mutual DAO System 커뮤니티의 가치는 토큰을 보유보다 상호 보장계약 계획에 참여할 더 많은 사용자를 확보하는 것에 있습니다.",
   mediShares_market_title3: "Mutual DAO System 는 매년 MDS를 구매하여 보험계약자에게 보상할 수 있도록 총 이익의 X%를 배당할 것입니다.",
-  partners: "파트너",
+  partners: "Investors",
 }
