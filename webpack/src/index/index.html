@@ -13,43 +13,36 @@
 </head>
 
 <body>
-  <div class="mds-top">
-    <!--nav-->
-    <%= require('../tpl/nav.ejs')({htmlWebpackPlugin}) %>
-      <div class="container content">
-        <img src="<%=htmlWebpackPlugin.options.path%>static/img/icon/header_logo@2x.png" width="182">
-        <h2 class="slogan">
-          <%=htmlWebpackPlugin.options.i18n.slogan%>
-        </h2>
-      </div>
-  </div>
-  <article class="container">
-    <!-- 网站列表 -->
-    <ul class="projects-list">
-      <% htmlWebpackPlugin.options.i18n.projectList.forEach(function(item,index){%>
-        <li class="clearfix">
-          <img class="image" src="<%=htmlWebpackPlugin.options.path%>static/img/project/<%=item.icon%>">
-          <div class="content">
-            <h1 class="part-title">
-              <%=item.title%>
-            </h1>
-            <p>
-              <%=item.slogan%>
-            </p>
-            <p class="platform">
-              <%=htmlWebpackPlugin.options.i18n.platform%>：
-                <%=item.platform%>
-            </p>
-            <a href="<%=item.link%>" target="_blank" rel="noreferrer">
-              <%=htmlWebpackPlugin.options.i18n.open%> <img src="<%=htmlWebpackPlugin.options.path%>static/img/icon/arr.png" width="12"></a>
-          </div>
-        </li>
-        <% }) %>
-    </ul>
-  </article>
+  <!--nav-->
+  <%= require('../tpl/nav.ejs')({htmlWebpackPlugin,path:''}) %>
 
-  <!-- 路线图 -->
-  <%= require('../tpl/roadmap/index.ejs')({htmlWebpackPlugin}) %>
+    <article class="container">
+      <!-- 网站列表 -->
+      <ul class="projects-list">
+        <% htmlWebpackPlugin.options.i18n.projectList.forEach(function(item,index){%>
+          <li class="clearfix">
+            <img class="image" src="<%=htmlWebpackPlugin.options.path%>static/img/project/<%=item.icon%>">
+            <div class="content">
+              <h1 class="part-title">
+                <%=item.title%>
+              </h1>
+              <p>
+                <%=item.slogan%>
+              </p>
+              <p class="platform">
+                <%=htmlWebpackPlugin.options.i18n.platform%>：
+                  <%=item.platform%>
+              </p>
+              <a href="<%=item.link%>" target="_blank" rel="noreferrer">
+                <%=htmlWebpackPlugin.options.i18n.open%> <img src="<%=htmlWebpackPlugin.options.path%>static/img/icon/arr.png" width="12"></a>
+            </div>
+          </li>
+          <% }) %>
+      </ul>
+    </article>
+
+    <!-- 路线图 -->
+    <!-- <%= require('../tpl/roadmap/index.ejs')({htmlWebpackPlugin}) %> -->
 
     <!-- 联系我们 -->
     <%= require('../tpl/contact.ejs')({htmlWebpackPlugin}) %>

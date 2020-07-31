@@ -1,0 +1,283 @@
+.pd-160 {
+  padding: 160px 0 !important;
+}
+
+.mt-120 {
+  margin-top: 120px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.bgfff {
+  background-color: #fff !important;
+}
+
+.about {
+  background: var(--bgColor);
+}
+
+.center-align {
+  text-align: center !important;
+}
+
+.mds-title {
+  text-align: center;
+  font: 300 32px/1.5 Gotham-Light;
+  margin-bottom: 64px;
+}
+
+.mds-des-dot {
+  float: left;
+  margin-right: 15px;
+}
+
+
+/*什么是 MediShares*/
+
+.mds-des {
+  padding: 120px 0 160px;
+  color: var(--darkColor);
+  line-height: 1.5;
+}
+
+.mds-des ul {
+  margin-top: 80px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+}
+
+
+/*MediShares 的优势*/
+
+.mds-superiority ul {
+  margin-top: 20px;
+}
+
+.mds-superiority li {
+  padding: 100px 50px 0;
+  color: var(--darkColor);
+}
+
+.mds-sup-icon {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  background-color: var(--darkColor);
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mds-sup-icon>img {
+  width: 100%;
+}
+
+.mds-sup-icon+div {
+  overflow: hidden;
+}
+
+
+/*应用场景*/
+
+.mds-application {
+  background-color: var(--blueGrey);
+}
+
+.mds-application .mds-title {
+  color: #fff;
+}
+
+.mds-apl-list>li {
+  margin-top: 20px;
+}
+
+.mds-apl-detail {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 344px;
+  background-position: right bottom;
+  padding: 40px 32px;
+  height: 240px;
+  border-radius: 2px;
+}
+
+.mds-apl-list>li:nth-of-type(1)>.mds-apl-detail {
+  background-image: url(../../static/img/application/scenario_icon_1@2x.png);
+}
+
+.mds-apl-list>li:nth-of-type(2)>.mds-apl-detail {
+  background-image: url(../../static/img/application/scenario_icon_2@2x.png);
+}
+
+.mds-apl-list>li:nth-of-type(3)>.mds-apl-detail {
+  background-image: url(../../static/img/application/scenario_icon_3@2x.png);
+}
+
+.mds-apl-list>li:nth-of-type(4)>.mds-apl-detail {
+  background-image: url(../../static/img/application/scenario_icon_4@2x.png);
+}
+
+.mds-apl-list>li:nth-of-type(5)>.mds-apl-detail {
+  background-image: url(../../static/img/application/scenario_icon_5@2x.png);
+}
+
+.mds-apl-list>li:nth-of-type(6)>.mds-apl-detail {
+  background-image: url(../../static/img/application/scenario_icon_6@2x.png);
+}
+
+.mds-apl-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--darkColor);
+  font-family: Gotham-Medium;
+}
+
+.mds-apl-info {
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--blueGrey);
+  position: relative;
+  z-index: 1;
+}
+
+
+/*保障合约市场*/
+
+.mds-market-list {
+  padding-right: 60px;
+}
+
+.mds-market-list:before {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-family: Gotham-Light;
+  font-size: 160px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--bgColor);
+  z-index: 0;
+}
+
+.mds-market-list.list1:before {
+  content: "1";
+}
+
+.mds-market-list.list2:before {
+  content: "2";
+}
+
+.mds-market-list.list3:before {
+  content: "3";
+}
+
+.mds-market-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: var(--darkColor);
+  font-family: Gotham-Medium;
+  position: relative;
+  z-index: 1;
+}
+
+
+/*合作伙伴*/
+
+.mds-partner-list {
+  height: 64px;
+  margin-top: 40px;
+}
+
+.mds-partner-list>a {
+  display: inline-block;
+  height: 100%;
+}
+
+.mds-partner-list img {
+  width: auto;
+  height: 100%;
+}
+
+
+/*小于992px屏幕 xs+sm*/
+
+@media (max-width: 991px) {
+  /*应用场景*/
+  .mds-apl-detail {
+    height: 360px;
+  }
+}
+
+
+/*小于768px屏幕 手机 xs*/
+
+@media (max-width: 767px) {
+  .mds-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  /*公共类*/
+  .pd-160 {
+    padding: 60px 0 !important;
+  }
+  .mt-120,
+  .mt-40 {
+    margin-top: 0px !important;
+  }
+  .mt-100 {
+    margin-top: 40px !important;
+  }
+  /*什么是 MediShares*/
+  .mds-des {
+    padding: 60px 0 80px;
+  }
+  .mds-des li {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .mds-des>.container>ul,
+  .mds-superiority>.container>ul,
+  .mds-market>.container>ul {
+    margin: 0;
+  }
+  /*优势*/
+  .mds-superiority li {
+    padding: 40px 0 0;
+  }
+  /*应用场景*/
+  .mds-apl-detail {
+    height: auto;
+  }
+  /*保障合约市场*/
+  .mds-market-list:before {
+    display: none;
+  }
+  .mds-market-list {
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+
+
+/*大于等于768px屏幕 包含平板 sm+md+lg*/
+
+@media (min-width: 768px) {
+  .mds-partner-list {
+    width: auto;
+    padding: 0;
+    margin: 40px 24px 0;
+    display: inline-block;
+    float: none;
+  }
+}
