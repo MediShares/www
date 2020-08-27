@@ -39,13 +39,13 @@ module.exports = {
       slogan: "Risks are everywhere in the world.Can we tokenize them,and make them tradable ? ",
       link: "http://riskexchange.one/"
     },
-    {
-      icon: "4.jpg",
-      title: "XinChain",
-      slogan: "XinChain is a blockchain that is born for public welfare. Every love should be taken seriously",
-      platform: "Bubi",
-      link: "http://xinchain.org"
-    },
+    // {
+    //   icon: "4.jpg",
+    //   title: "XinChain",
+    //   slogan: "XinChain is a blockchain that is born for public welfare. Every love should be taken seriously",
+    //   platform: "Bubi",
+    //   link: "http://xinchain.org"
+    // },
     {
       icon: "5.jpg",
       title: "Transaction Delay Contract",

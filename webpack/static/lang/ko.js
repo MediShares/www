@@ -39,13 +39,13 @@ module.exports = {
       slogan: "위험은 어디에나 있으며, 우리가 그것들을 표시하고 거래할 수 있게 할 수 있을까요? ",
       link: "http://riskexchange.one/"
     },
-    {
-      icon: "4.jpg",
-      title: "하트 체인",
-      slogan: "하트 체인은 공익을 위해 태어난 체인이다. 사랑한 만큼 성실하게 대해야 합니다",
-      platform: "Bubi",
-      link: "http://xinchain.org"
-    },
+    // {
+    //   icon: "4.jpg",
+    //   title: "하트 체인",
+    //   slogan: "하트 체인은 공익을 위해 태어난 체인이다. 사랑한 만큼 성실하게 대해야 합니다",
+    //   platform: "Bubi",
+    //   link: "http://xinchain.org"
+    // },
     {
       icon: "5.jpg",
       title: "이체 시간 초과 보장 계약",
