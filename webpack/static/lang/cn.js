@@ -39,13 +39,13 @@ module.exports = {
       slogan: "风险无处不在，我们可以标记它们并使其可交易吗？ ",
       link: "http://riskexchange.one/"
     },
-    {
-      icon: "4.jpg",
-      title: "心链",
-      slogan: "心链是为公益而生的区块链。每一分爱心都应该被认真对待",
-      platform: "Bubi",
-      link: "http://xinchain.org"
-    },
+    // {
+    //   icon: "4.jpg",
+    //   title: "心链",
+    //   slogan: "心链是为公益而生的区块链。每一分爱心都应该被认真对待",
+    //   platform: "Bubi",
+    //   link: "http://xinchain.org"
+    // },
     {
       icon: "5.jpg",
       title: "转账超时保障合约",
