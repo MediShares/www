@@ -15,7 +15,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // 服务端压缩是否开启，目前开不开都行，想关你就关
     compress: true,
     // 配置服务端口号，建议别用80，很容易被占用，你要是非要用也是可以的。
-    port: 8081,
+    port: 4000,
     clientLogLevel: 'warning',
     historyApiFallback: true, //如果为 true ，页面出错不会弹出 404 页面。
     hot: true, //修改或模块后，保存会自动更新，页面不用刷新呈现最新的效果。
