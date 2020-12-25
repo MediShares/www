@@ -85,7 +85,7 @@ module.exports = {
   roadmap_step8_1: "Launch Mutual Aid DAO",
   contact_title: "Like what we are building?",
   contact_info: "Welcome mutual aid organization, inclusive finance organization and volunteer contact us! Send Email to us :",
-  telegram_link: "https://t.me/medishares",
+  telegram_link: "https://t.me/medisharesEN",
   twitter_link: "https://twitter.com/MediShares",
   weibo_kakao: "Weibo",
   weibo_kakao_icon: "static/img/foot/sns_icon_weibo@2x.png",
